@@ -1,0 +1,7 @@
+name = "author-profile"
+main = "worker.js"
+compatibility_date = "2026-04-23"
+
+routes = [
+  { pattern = "saudivapes.com/ar/blog/author/1210468642*", zone_name = "saudivapes.com" }
+]

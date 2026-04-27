@@ -1,0 +1,16 @@
+---
+export interface Props {
+  url: string;
+}
+const { url } = Astro.props;
+---
+
+<script type="application/ld+json" set:html={JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  url,
+  speakable: {
+    '@type': 'SpeakableSpecification',
+    cssSelector: ['.prose', '.faq-section'],
+  },
+})} />

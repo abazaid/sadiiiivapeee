@@ -1,0 +1,112 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import PostCard from '../components/blog/PostCard.astro';
+import SeoMeta from '../components/seo/SeoMeta.astro';
+import BreadcrumbSchema from '../components/seo/BreadcrumbSchema.astro';
+
+export interface Props {
+  posts: Array<{
+    title: string;
+    description: string;
+    slug: string;
+    date: string;
+    image: string;
+    category: string;
+    tags?: string[];
+  }>;
+  tag?: string;
+}
+const { posts, tag } = Astro.props;
+const pageTitle = tag
+  ? `مقالات عن ${tag} | مدونة فيب السعودية`
+  : 'مدونة فيب السعودية - أدلة ومراجعات الفيب والشيشة الإلكترونية';
+const pageDesc = tag
+  ? `جميع المقالات والمواضيع المتعلقة بـ ${tag} في عالم الفيب والشيشة الإلكترونية في السعودية.`
+  : 'مدونة متخصصة في عالم الفيب والشيشة الإلكترونية في السعودية. نقدم أدلة شراء، مراجعات منتجات، مقارنات، ومعلومات قانونية عن vaping في المملكة.';
+const canonical = tag
+  ? `https://saudivapes.com/ar/blog/tag/${encodeURIComponent(tag)}`
+  : 'https://saudivapes.com/ar/blog';
+---
+
+<BaseLayout title={pageTitle} description={pageDesc}>
+  <SeoMeta
+    title={pageTitle}
+    description={pageDesc}
+    canonical={canonical}
+  />
+  <BreadcrumbSchema items={
+    tag
+      ? [
+          { name: 'الرئيسية', url: 'https://saudivapes.com/ar' },
+          { name: 'المدونة', url: 'https://saudivapes.com/ar/blog' },
+          { name: tag, url: canonical },
+        ]
+      : [
+          { name: 'الرئيسية', url: 'https://saudivapes.com/ar' },
+          { name: 'المدونة', url: 'https://saudivapes.com/ar/blog' },
+        ]
+  } />
+
+  <div class="blog-page">
+    <div class="container">
+      <div class="blog-header">
+        {tag ? (
+          <>
+            <span class="blog-label">تصفح الوسم</span>
+            <h1>{tag}</h1>
+            <p class="blog-subtitle">{posts.length} مقال | مدونة فيب السعودية</p>
+          </>
+        ) : (
+          <>
+            <h1>مدونة فيب السعودية</h1>
+            <p class="blog-subtitle">أدلة شراء، مراجعات، ومعلومات عن الفيب والشيشة الإلكترونية في المملكة</p>
+          </>
+        )}
+      </div>
+      <div class="posts-grid">
+        {posts.map(post => <PostCard {...post} />)}
+      </div>
+      {posts.length === 0 && (
+        <div class="no-posts">
+          <p>لا توجد مقالات بعد. ترقبوا المحتوى الجديد قريبًا.</p>
+        </div>
+      )}
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .blog-page { padding: 3rem 0; }
+  .blog-header { text-align: center; margin-bottom: 3rem; }
+  .blog-header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, #7c3aed, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .blog-subtitle { color: #6b7280; font-size: 1rem; font-family: 'Cairo', sans-serif; }
+  .blog-label {
+    display: inline-block;
+    background: #f3f0ff;
+    color: #7c3aed;
+    padding: 0.25rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    font-family: 'Cairo', sans-serif;
+    margin-bottom: 0.75rem;
+  }
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 1.5rem;
+  }
+  .no-posts {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: #9ca3af;
+    font-size: 1.1rem;
+  }
+</style>

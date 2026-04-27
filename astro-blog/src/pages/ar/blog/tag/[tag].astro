@@ -1,0 +1,43 @@
+---
+import BlogIndexLayout from '../../../../layouts/BlogIndexLayout.astro';
+
+export async function getStaticPaths() {
+  // All tags from the blog posts
+  const allPosts = Object.values(
+    import.meta.glob<{ frontmatter: { tags?: string[]; draft?: boolean; title: string; description: string; slug: string; date: string; image: string; category: string } }>('../../../../content/blog/*.md', { eager: true })
+  );
+
+  const tagSet = new Set<string>();
+  allPosts.forEach(p => {
+    if (!p.frontmatter.draft && p.frontmatter.tags) {
+      p.frontmatter.tags.forEach(t => tagSet.add(t));
+    }
+  });
+
+  return Array.from(tagSet).map(tag => ({
+    params: { tag },
+    props: { tag },
+  }));
+}
+
+const { tag } = Astro.props;
+
+const allPosts = Object.values(
+  import.meta.glob<{ frontmatter: { tags?: string[]; draft?: boolean; title: string; description: string; slug: string; date: string; image: string; category: string } }>('../../../../content/blog/*.md', { eager: true })
+);
+
+const posts = allPosts
+  .filter(p => !p.frontmatter.draft && p.frontmatter.tags?.includes(tag))
+  .map(p => ({
+    title: p.frontmatter.title,
+    description: p.frontmatter.description,
+    slug: p.frontmatter.slug,
+    date: p.frontmatter.date,
+    image: p.frontmatter.image,
+    category: p.frontmatter.category,
+    tags: p.frontmatter.tags,
+  }))
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+---
+
+<BlogIndexLayout posts={posts} tag={tag} />

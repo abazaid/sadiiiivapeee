@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "include": [
+    "/ar/blog",
+    "/ar/blog/*",
+    "/ar/blog/author/*"
+  ],
+  "fallthrough": [
+    "/*"
+  ]
+}

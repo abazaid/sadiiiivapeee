@@ -1,0 +1,7 @@
+name = "about-page"
+main = "worker.js"
+compatibility_date = "2026-04-23"
+
+routes = [
+  { pattern = "saudivapes.com/ar/%D9%85%D9%86-%D9%86%D8%AD%D9%86*", zone_name = "saudivapes.com" }
+]

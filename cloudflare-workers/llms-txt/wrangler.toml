@@ -1,0 +1,18 @@
+name = "llms-txt"
+main = "worker.js"
+compatibility_date = "2026-04-22"
+
+routes = [
+  { pattern = "saudivapes.com/llms.txt*", zone_name = "saudivapes.com" },
+  { pattern = "saudivapes.com/ar/llms.txt*", zone_name = "saudivapes.com" },
+  { pattern = "saudivapes.com/agents.json*", zone_name = "saudivapes.com" },
+  { pattern = "saudivapes.com/.well-known/agents.json*", zone_name = "saudivapes.com" },
+  { pattern = "saudivapes.com/.well-known/ai-plugin.json*", zone_name = "saudivapes.com" },
+  { pattern = "saudivapes.com/openapi.yaml*", zone_name = "saudivapes.com" },
+  { pattern = "saudivapes.com/ar/agents.json*", zone_name = "saudivapes.com" },
+  { pattern = "saudivapes.com/ar/.well-known/agents.json*", zone_name = "saudivapes.com" },
+  { pattern = "saudivapes.com/ar/.well-known/ai-plugin.json*", zone_name = "saudivapes.com" },
+  { pattern = "saudivapes.com/ar/openapi.yaml*", zone_name = "saudivapes.com" },
+  { pattern = "saudivapes.com/llms-full.txt*", zone_name = "saudivapes.com" },
+  { pattern = "saudivapes.com/ar/llms-full.txt*", zone_name = "saudivapes.com" },
+]

@@ -1,0 +1,1923 @@
+export default {
+  async fetch(request) {
+    const url = new URL(request.url);
+    const path = decodeURIComponent(url.pathname);
+
+    const routes = [
+      '/ar/%D9%85%D8%AA%D8%AC%D8%B1-%D9%81%D9%8A%D8%A8-%D8%A7%D9%84%D8%A7%D8%AD%D8%B3%D8%A7%D8%A1',
+      '/%D9%85%D8%AA%D8%AC%D8%B1-%D9%81%D9%8A%D8%A8-%D8%A7%D9%84%D8%A7%D8%AD%D8%B3%D8%A7%D8%A1',
+      '/ar/متجر-فيب-الاحساء',
+      '/متجر-فيب-الاحساء'
+    ];
+
+    if (routes.includes(path) || path.startsWith('/ar/%D9%85%D8%AA%D8%AC%D8%B1-%D9%81%D9%8A%D8%A8-%D8%A7%D9%84%D8%A7%D8%AD%D8%B3%D8%A7%D8%A1')) {
+      return new Response(`<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta -->
+  <title>متجر فيب في الأحساء | توصيل للمنزل – سحبات وشيشة اصلية 2026</title>
+  <meta name="description" content="أفضل متجر فيب في الأحساء يوصل للمنزل. سحبات جاهزة، نكهات أصلية، شيشة الكترونية من Elf Bar وMazaj وGeek Bar. دفع بمدى، Apple Pay، أو عند الاستلام. اطلب الآن." />
+  <meta name="keywords" content="متجر فيب الأحساء, الحساوي فيب, فيب الأحساء, سحبات جاهزة الأحساء, شيشة الكترونية الأحساء, توصيل فيب الأحساء" />
+  <link rel="canonical" href="https://saudivapes.com/ar/متجر-فيب-الاحساء" />
+  <link rel="alternate" hreflang="ar" href="https://saudivapes.com/ar/%D9%85%D8%AA%D8%AC%D8%B1-%D9%81%D9%8A%D8%A8-%D8%A7%D9%84%D8%A7%D8%AD%D8%B3%D8%A7%D8%A1" />
+  <link rel="alternate" hreflang="x-default" href="https://saudivapes.com/ar/%D9%85%D8%AA%D8%AC%D8%B1-%D9%81%D9%8A%D8%A8-%D8%A7%D9%84%D8%A7%D8%AD%D8%B3%D8%A7%D8%A1" />
+  <meta name="datePublished" content="2026-01-15T10:00:00+03:00" />
+  <meta name="dateModified" content="2026-04-25T10:00:00+03:00" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="متجر فيب في الأحساء | توصيل للمنزل 2026" />
+  <meta property="og:description" content="سحبات جاهزة ونكهات أصلية وشيشة الكترونية بتوصيل سريع لجميع أحياء الأحساء." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://saudivapes.com/ar/متجر-فيب-الاحساء" />
+  <meta property="og:image" content="https://cdn.salla.sa/jbXEY/afde9f5d-2d6b-4ae3-b9bb-f1807ca0966e-800x500-RvMkhsyB37S30Qq56Pm8YvaLwzVvi8kDCLxTifdf.jpg" />
+  <meta property="og:locale" content="ar_SA" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="متجر فيب في الأحساء | توصيل للمنزل" />
+  <meta name="twitter:description" content="أصلي 100% | دفع بمدى | توصيل داخل الأحساء" />
+
+  <!-- JSON-LD Schema: LocalBusiness + Store -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness", "Store"],
+    "name": "Saudi Vape - متجر الأحساء",
+    "url": "https://saudivapes.com/ar/%D9%85%D8%AA%D8%AC%D8%B1-%D9%81%D9%8A%D8%A8-%D8%A7%D9%84%D8%A7%D8%AD%D8%B3%D8%A7%D8%A1",
+    "logo": "https://cdn.salla.sa/cdn-cgi/image/fit=scale-down,width=400,height=400,onerror=redirect,format=auto/jbXEY/Bv6FKwLWFVbiOi6heH08B3RhVCMM1MkOAkYbQ2YX.png",
+    "image": "https://cdn.salla.sa/jbXEY/afde9f5d-2d6b-4ae3-b9bb-f1807ca0966e-800x500-RvMkhsyB37S30Qq56Pm8YvaLwzVvi8kDCLxTifdf.jpg",
+    "description": "متجر فيب أونلاين متخصص في السحبات الجاهزة والنكهات والشيشة الالكترونية مع توصيل سريع لجميع أحياء الأحساء والسعودية.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "الأحساء",
+      "addressRegion": "المنطقة الشرقية",
+      "addressCountry": "SA"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 25.3573,
+      "longitude": 49.5867
+    },
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "الأحساء"
+      },
+      {
+        "@type": "Country",
+        "name": "Saudi Arabia"
+      }
+    ],
+    "priceRange": "$$",
+    "paymentAccepted": "مدى، Apple Pay، Visa، Mastercard، الدفع عند الاستلام",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "09:00",
+        "closes": "24:00"
+      }
+    ],
+    "telephone": "+966542906276",
+    "sameAs": [
+      "https://www.instagram.com/saudivapes/",
+      "https://x.com/saudivapes",
+      "https://wa.me/966542906276"
+    ],
+    "parentOrganization": {
+      "@id": "https://saudivapes.com/#organization"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD Schema: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "هل يوجد متجر فيب يوصل للمنزل في الأحساء؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "نعم، متجرنا يغطي جميع أحياء الأحساء. الطلبات قبل الساعة 4 عصراً تصل عادةً خلال 4-8 ساعات حسب الحي."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "هل يمكن الدفع عند الاستلام للفيب في الأحساء؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "نعم، ندعم الدفع عند الاستلام داخل الأحساء بالإضافة إلى مدى وApple Pay وبطاقات الائتمان والتقسيط عبر تمارا."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "كيف أعرف أن السحبة أصلية وليست تقليد؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "كل منتجاتنا مستوردة مباشرة وتحمل كود التحقق الأصلي من الشركة. يمكن مسح الباركود على موقع الشركة المصنعة للتأكد من الأصالة."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "ما هي أفضل سحبة جاهزة للمبتدئين في 2026؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "للمبتدئين نوصي بـ Mazaj Lowit 5500 أو Elf Bar BC5000 — سهلة الاستخدام، لا تحتاج إعدادات، وتدوم من 3 إلى 7 أيام حسب الاستخدام."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "هل تشحنون من الأحساء لباقي مدن السعودية؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "نعم، نشحن لجميع مدن المملكة من الدمام والرياض إلى جدة وأبها. مدة الشحن 24-72 ساعة. الشحن مجاني للطلبات فوق 500 ريال."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD Schema: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://saudivapes.com/" },
+      { "@type": "ListItem", "position": 2, "name": "متجر فيب الأحساء", "item": "https://saudivapes.com/ar/متجر-فيب-الاحساء" }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD Schema: Person (Author / Business Owner) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://saudivapes.com/#person",
+    "name": "SAIF",
+    "alternateName": "سيف",
+    "description": "خبير منتجات الفيب في السعودية ومحرر متخصص في السحبات الإلكترونية والشيشة الالكترونية",
+    "knowsAbout": [
+      "vaping products",
+      "disposable vapes",
+      "e-liquids",
+      "nicotine salts",
+      "vape devices"
+    ],
+    "worksFor": {
+      "@id": "https://saudivapes.com/#organization"
+    },
+    "sameAs": [
+      "https://x.com/saudivapes"
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD Schema: AggregateRating (Store) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Saudi Vape - متجر الأحساء",
+    "url": "https://saudivapes.com/ar/%D9%85%D8%AA%D8%AC%D8%B1-%D9%81%D9%8A%D8%A8-%D8%A7%D9%84%D8%A7%D8%AD%D8%B3%D8%A7%D8%A1",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "1500",
+      "bestRating": "5",
+      "worstRating": "1"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD Schema: Review (Customer Reviews) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Saudi Vape - متجر الأحساء",
+    "review": [
+      {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "سعد اليوسف"
+        },
+        "datePublished": "2026-04-15",
+        "reviewBody": "طلبت مزاج Lowit 5500 نكهة خوخ عشان أجرب الفيب لأول مرة. وصل الطلب خلال 6 ساعات تقريباً. النكهة ممتازة والمنتج أصلي — تأكدت من كود التحقق."
+      },
+      {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "حسن الجاسم"
+        },
+        "datePublished": "2026-03-20",
+        "reviewBody": "طلبت XROS 4 Nano مع نكهة سولت مانجو آيس. التوصيل كان أسرع من المتوقع — وصل بشوي. الجهاز ممتاز ونكهة المانجو رهيبة. سأطلب مرة ثانية."
+      },
+      {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "منيرة الحواس"
+        },
+        "datePublished": "2026-02-10",
+        "reviewBody": "أول مرة أطلب من متجر فيب أونلاين. اخترت فيقود 4K تفاح للبداية. السحبة ممتازة والحجم صغير يناسب الجيب. الخدمة ممتازة."
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD Schema: Speakable (AI Assistant Readable Content) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "متجر فيب في الأحساء | توصيل للمنزل – سحبات وشيشة اصلية 2026",
+    "url": "https://saudivapes.com/ar/%D9%85%D8%AA%D8%AC%D8%B1-%D9%81%D9%8A%D8%A8-%D8%A7%D9%84%D8%A7%D8%AD%D8%B3%D8%A7%D8%A1",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [
+        ".prose-wrap",
+        ".guide-text",
+        ".faq-answer",
+        ".compare-section"
+      ]
+    }
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Tajawal:wght@400;500;700;800&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Tajawal:wght@400;500;700;800&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Tajawal:wght@400;500;700;800&display=swap" /></noscript>
+
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --surface: #13131c;
+      --surface2: #1c1c2e;
+      --border: #2a2a40;
+      --accent: #7c3aed;
+      --accent2: #a855f7;
+      --gold: #f59e0b;
+      --green: #10b981;
+      --text: #e8e8f0;
+      --muted: #8b8ba8;
+      --white: #ffffff;
+      --radius: 16px;
+      --radius-sm: 8px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Cairo', sans-serif;
+      line-height: 1.7;
+      font-size: 16px;
+      direction: rtl;
+    }
+
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(10,10,15,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      font-family: 'Tajawal', sans-serif;
+      font-weight: 800;
+      font-size: 1.3rem;
+      color: var(--white);
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--accent2); }
+    .nav-links { display: flex; gap: 20px; list-style: none; }
+    .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.9rem; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--white); }
+    .nav-cta {
+      background: var(--accent);
+      color: white;
+      padding: 8px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 700;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .nav-cta:hover { background: var(--accent2); transform: translateY(-1px); }
+
+    .hero {
+      position: relative;
+      min-height: 88vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      padding: 80px 24px 60px;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 20% 50%, rgba(124,58,237,0.18) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 50% at 80% 80%, rgba(168,85,247,0.1) 0%, transparent 55%),
+        radial-gradient(ellipse 40% 40% at 60% 10%, rgba(245,158,11,0.06) 0%, transparent 50%);
+    }
+    .hero-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(124,58,237,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(124,58,237,0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+    .hero-content {
+      position: relative;
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 60px;
+      align-items: center;
+      width: 100%;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(124,58,237,0.15);
+      border: 1px solid rgba(124,58,237,0.3);
+      color: var(--accent2);
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    .hero-badge .dot {
+      width: 7px; height: 7px;
+      background: var(--green);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.3); }
+    }
+    .hero-title {
+      font-family: 'Tajawal', sans-serif;
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      font-weight: 900;
+      line-height: 1.25;
+      color: var(--white);
+      margin-bottom: 20px;
+    }
+    .hero-title .highlight {
+      background: linear-gradient(135deg, var(--accent2), var(--gold));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-desc {
+      font-size: 1.05rem;
+      color: var(--muted);
+      margin-bottom: 32px;
+      max-width: 520px;
+    }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: white;
+      padding: 14px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 8px 30px rgba(124,58,237,0.35);
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(124,58,237,0.5); }
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      color: var(--text);
+      padding: 14px 26px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      border: 1px solid var(--border);
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .btn-secondary:hover { border-color: var(--accent2); color: var(--accent2); }
+    .hero-trust {
+      display: flex;
+      gap: 20px;
+      margin-top: 28px;
+      flex-wrap: wrap;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.83rem;
+      color: var(--muted);
+    }
+    .trust-item .icon { color: var(--green); font-size: 1rem; }
+
+    .hero-cards { display: flex; flex-direction: column; gap: 14px; }
+    .hero-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      transition: border-color 0.2s, transform 0.2s;
+      text-decoration: none;
+      color: var(--text);
+    }
+    .hero-card:hover { border-color: var(--accent); transform: translateX(-4px); }
+    .hero-card-icon {
+      width: 48px; height: 48px;
+      background: linear-gradient(135deg, rgba(124,58,237,0.2), rgba(168,85,247,0.1));
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      flex-shrink: 0;
+    }
+    .hero-card-text h4 { font-size: 0.95rem; font-weight: 700; color: var(--white); margin-bottom: 2px; }
+    .hero-card-text p { font-size: 0.8rem; color: var(--muted); }
+    .hero-card-arrow { margin-right: auto; color: var(--muted); font-size: 1rem; }
+
+    section { padding: 80px 24px; }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .section-label {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent2);
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-family: 'Tajawal', sans-serif;
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 900;
+      color: var(--white);
+      margin-bottom: 14px;
+      line-height: 1.3;
+    }
+    .section-sub { color: var(--muted); font-size: 1rem; max-width: 600px; margin-bottom: 48px; }
+    .prose-section,
+    .compare-section,
+    .areas-section,
+    .payment-section,
+    .reviews-section,
+    .faq-section,
+    .bottom-cta,
+    footer {
+      content-visibility: auto;
+      contain-intrinsic-size: 1px 900px;
+    }
+
+    .stats-bar {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 28px 24px;
+    }
+    .stats-grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+    }
+    .stat-item {
+      text-align: center;
+      padding: 0 20px;
+      border-left: 1px solid var(--border);
+    }
+    .stat-item:last-child { border-left: none; }
+    .stat-number {
+      font-family: 'Tajawal', sans-serif;
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .stat-number span { color: var(--accent2); }
+    .stat-label { font-size: 0.82rem; color: var(--muted); }
+
+    .products-section { background: var(--bg); }
+    .product-tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 36px;
+      flex-wrap: wrap;
+    }
+    .tab-btn {
+      padding: 9px 20px;
+      border-radius: 50px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--muted);
+      font-family: 'Cairo', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .tab-btn.active, .tab-btn:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: white;
+    }
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .product-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: transform 0.2s, border-color 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+    .product-card:hover { transform: translateY(-4px); border-color: rgba(124,58,237,0.4); }
+    .product-img {
+      height: 200px;
+      background: var(--surface2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .product-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      position: relative;
+      z-index: 1;
+      padding: 12px;
+    }
+    .product-img::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, transparent 50%, var(--surface) 100%);
+    }
+    .badge-new {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: var(--green);
+      color: white;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 50px;
+      z-index: 2;
+    }
+    .badge-hot {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: #ef4444;
+      color: white;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 50px;
+      z-index: 2;
+    }
+    .product-body { padding: 18px 18px 20px; flex: 1; display: flex; flex-direction: column; }
+    .product-brand { font-size: 0.72rem; color: var(--accent2); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 4px; }
+    .product-name { font-size: 1.05rem; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+    .product-specs {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+    .spec-tag {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.73rem;
+      padding: 3px 10px;
+      border-radius: 50px;
+    }
+    .product-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: auto;
+    }
+    .product-price {
+      font-family: 'Tajawal', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 900;
+      color: var(--white);
+    }
+    .product-price small { font-size: 0.75rem; color: var(--muted); font-weight: 400; }
+    .btn-add {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 9px 18px;
+      border-radius: 50px;
+      font-family: 'Cairo', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn-add:hover { background: var(--accent2); transform: scale(1.04); }
+
+    .guide-section { background: var(--surface); }
+    .guide-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+    .guide-text p {
+      color: var(--muted);
+      margin-bottom: 18px;
+      font-size: 0.97rem;
+    }
+    .guide-text p strong { color: var(--text); }
+    .steps-list { list-style: none; margin-top: 8px; }
+    .steps-list li {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+    .steps-list li:last-child { border-bottom: none; }
+    .step-num {
+      width: 36px; height: 36px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 0.85rem;
+      color: white;
+      flex-shrink: 0;
+    }
+    .step-text h4 { color: var(--white); font-size: 0.95rem; font-weight: 700; margin-bottom: 4px; }
+    .step-text p { color: var(--muted); font-size: 0.85rem; }
+
+    .compare-card {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .compare-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--white);
+      padding: 18px 20px;
+      border-bottom: 1px solid var(--border);
+      background: rgba(124,58,237,0.08);
+    }
+    .compare-table { width: 100%; border-collapse: collapse; }
+    .compare-table th {
+      background: rgba(124,58,237,0.12);
+      color: var(--accent2);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 12px 16px;
+      text-align: right;
+      border-bottom: 1px solid var(--border);
+    }
+    .compare-table td {
+      padding: 12px 16px;
+      font-size: 0.85rem;
+      color: var(--text);
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      text-align: right;
+    }
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-table tr:hover td { background: rgba(255,255,255,0.02); }
+    .best-badge {
+      background: rgba(16,185,129,0.15);
+      color: var(--green);
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 50px;
+    }
+
+    .calc-section { background: var(--bg); }
+    .calc-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px 40px;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    .calc-card h3 {
+      font-family: 'Tajawal', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+    .calc-card p { color: var(--muted); font-size: 0.9rem; margin-bottom: 28px; }
+    .form-group { margin-bottom: 20px; }
+    .form-group label {
+      display: block;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    .form-group select, .form-group input {
+      width: 100%;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 12px 16px;
+      border-radius: var(--radius-sm);
+      font-family: 'Cairo', sans-serif;
+      font-size: 0.92rem;
+      outline: none;
+      transition: border-color 0.2s;
+      direction: rtl;
+    }
+    .form-group select:focus, .form-group input:focus { border-color: var(--accent2); }
+    .calc-result {
+      background: linear-gradient(135deg, rgba(124,58,237,0.15), rgba(168,85,247,0.08));
+      border: 1px solid rgba(124,58,237,0.3);
+      border-radius: var(--radius-sm);
+      padding: 20px;
+      margin-top: 20px;
+      display: none;
+    }
+    .calc-result.show { display: block; }
+    .calc-result h4 { color: var(--accent2); font-size: 0.88rem; font-weight: 700; margin-bottom: 8px; }
+    .calc-result .result-main {
+      font-family: 'Tajawal', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+    .calc-result p { color: var(--muted); font-size: 0.85rem; }
+
+    .areas-section { background: var(--surface); }
+    .areas-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+    .area-card {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 18px 16px;
+      text-align: center;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .area-card:hover { border-color: rgba(124,58,237,0.4); transform: translateY(-2px); }
+    .area-icon { font-size: 1.8rem; margin-bottom: 8px; }
+    .area-name { font-size: 0.92rem; font-weight: 700; color: var(--white); margin-bottom: 4px; }
+    .area-time { font-size: 0.75rem; color: var(--green); }
+
+    .faq-section { background: var(--bg); }
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+    .faq-list { list-style: none; }
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+    }
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      color: var(--white);
+      font-family: 'Cairo', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-align: right;
+      padding: 18px 0;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+    .faq-question .faq-icon {
+      color: var(--accent2);
+      font-size: 1.2rem;
+      flex-shrink: 0;
+      transition: transform 0.2s;
+    }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-answer {
+      display: none;
+      color: var(--muted);
+      font-size: 0.9rem;
+      padding-bottom: 18px;
+      line-height: 1.7;
+    }
+    .faq-item.open .faq-answer { display: block; }
+    .faq-cta {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      text-align: center;
+    }
+    .faq-cta .emoji { font-size: 2.5rem; margin-bottom: 12px; }
+    .faq-cta h3 { font-size: 1.1rem; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+    .faq-cta p { font-size: 0.85rem; color: var(--muted); margin-bottom: 20px; }
+    .whatsapp-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #25d366;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.9rem;
+      transition: opacity 0.2s;
+    }
+    .whatsapp-btn:hover { opacity: 0.9; }
+
+    .reviews-section { background: var(--surface); }
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .review-card {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px;
+    }
+    .stars { color: var(--gold); margin-bottom: 12px; font-size: 0.9rem; }
+    .review-text { color: var(--text); font-size: 0.88rem; line-height: 1.65; margin-bottom: 16px; }
+    .reviewer { display: flex; align-items: center; gap: 10px; }
+    .reviewer-avatar {
+      width: 36px; height: 36px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: white;
+      flex-shrink: 0;
+    }
+    .reviewer-name { font-size: 0.85rem; font-weight: 700; color: var(--white); }
+    .reviewer-date { font-size: 0.75rem; color: var(--muted); }
+
+    .payment-section { background: var(--bg); }
+    .payment-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+    .payment-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 20px;
+      text-align: center;
+    }
+    .payment-icon { font-size: 2.2rem; margin-bottom: 10px; }
+    .payment-name { font-size: 0.9rem; font-weight: 700; color: var(--white); margin-bottom: 4px; }
+    .payment-desc { font-size: 0.78rem; color: var(--muted); }
+
+    .bottom-cta {
+      background: linear-gradient(135deg, rgba(124,58,237,0.2), rgba(168,85,247,0.1));
+      border-top: 1px solid rgba(124,58,237,0.2);
+      border-bottom: 1px solid rgba(124,58,237,0.2);
+      padding: 80px 24px;
+      text-align: center;
+    }
+    .bottom-cta h2 {
+      font-family: 'Tajawal', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 900;
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+    .bottom-cta p { color: var(--muted); font-size: 1rem; margin-bottom: 32px; max-width: 500px; margin-left: auto; margin-right: auto; }
+    .cta-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+    footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 48px 24px 24px;
+    }
+    .footer-grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 40px;
+    }
+    .footer-brand p { color: var(--muted); font-size: 0.88rem; margin-top: 12px; max-width: 280px; line-height: 1.65; }
+    .footer-col h4 { color: var(--white); font-size: 0.92rem; font-weight: 700; margin-bottom: 16px; }
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: 10px; }
+    .footer-col ul li a { color: var(--muted); text-decoration: none; font-size: 0.85rem; transition: color 0.2s; }
+    .footer-col ul li a:hover { color: var(--accent2); }
+    .footer-bottom {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    .prose-section { background: var(--bg); }
+    .prose-wrap { max-width: 760px; }
+    .prose-wrap h2 {
+      font-family: 'Tajawal', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--white);
+      margin: 36px 0 12px;
+      padding-top: 8px;
+    }
+    .prose-wrap h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text);
+      margin: 24px 0 10px;
+    }
+    .prose-wrap p {
+      color: var(--muted);
+      font-size: 0.97rem;
+      margin-bottom: 16px;
+      line-height: 1.8;
+    }
+    .prose-wrap p strong { color: var(--text); }
+    .prose-wrap ul { list-style: none; margin: 0 0 16px; padding: 0; }
+    .prose-wrap ul li {
+      color: var(--muted);
+      font-size: 0.95rem;
+      padding: 6px 0 6px 0;
+      padding-right: 20px;
+      position: relative;
+    }
+    .prose-wrap ul li::before {
+      content: '›';
+      position: absolute;
+      right: 0;
+      color: var(--accent2);
+      font-weight: 700;
+    }
+    .inline-cta {
+      background: linear-gradient(135deg, rgba(124,58,237,0.12), rgba(168,85,247,0.06));
+      border: 1px solid rgba(124,58,237,0.25);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin: 28px 0;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+    .inline-cta .cta-icon { font-size: 2rem; flex-shrink: 0; }
+    .inline-cta h4 { font-size: 0.95rem; font-weight: 700; color: var(--white); margin-bottom: 4px; }
+    .inline-cta p { font-size: 0.82rem; color: var(--muted); margin: 0; }
+    .inline-cta a {
+      margin-right: auto;
+      flex-shrink: 0;
+      background: var(--accent);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+    @media (max-width: 900px) {
+      .hero-content { grid-template-columns: 1fr; }
+      .hero-cards { display: none; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .stat-item:nth-child(2) { border-left: none; }
+      .products-grid { grid-template-columns: repeat(2, 1fr); }
+      .guide-grid { grid-template-columns: 1fr; }
+      .faq-grid { grid-template-columns: 1fr; }
+      .areas-grid { grid-template-columns: 1fr; }
+      .reviews-grid { grid-template-columns: 1fr; }
+      .payment-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+    }
+    @media (max-width: 600px) {
+      .products-grid { grid-template-columns: 1fr; }
+      .areas-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+      .site-nav { backdrop-filter: none; }
+      .calc-card { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════ NAV ═══ -->
+<nav class="site-nav" role="navigation" aria-label="القائمة الرئيسية">
+  <a href="https://saudivapes.com/ar" class="nav-logo">Saudi <span>Vape</span></a>
+  <ul class="nav-links">
+    <li><a href="https://saudivapes.com/ar/سحبات-جاهزة-لمرة-واحدة/c2053520858">سحبات جاهزة</a></li>
+    <li><a href="https://saudivapes.com/ar/سحبة-سيجارة-vape-pen/c856338910">سحبة سيجارة</a></li>
+    <li><a href="https://saudivapes.com/ar/أجهزة-شيشة-الكترونية/c215470303">أجهزة شيشة</a></li>
+    <li><a href="https://saudivapes.com/ar/نكهات-سحبة-سولت/c1589444568">نكهات سولت</a></li>
+  </ul>
+  <a href="https://saudivapes.com/ar" class="nav-cta">تسوق الآن</a>
+</nav>
+
+<!-- ═══════════════════════════════════════════ HERO ═══ -->
+<header class="hero" role="banner">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-left">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        متاح الآن في الأحساء — توصيل للمنزل
+      </div>
+      <h1 class="hero-title">
+        متجر فيب في الأحساء<br/>
+        <span class="highlight">يوصّل لبابك</span><br/>
+        بساعات
+      </h1>
+      <p class="hero-desc">
+        سحبات جاهزة، نكهات أصلية، شيشة الكترونية من أشهر الماركات العالمية.
+        أسعار منافسة، دفع بمدى أو عند الاستلام، وتوصيل سريع لأحياء الأحساء.
+      </p>
+      <div class="hero-actions">
+        <a href="#products" class="btn-primary">تسوق الآن</a>
+        <a href="#guide" class="btn-secondary">دليل الاختيار</a>
+      </div>
+      <div class="hero-trust">
+        <span class="trust-item"><span class="icon">✓</span> أصلي 100% مع ضمان</span>
+        <span class="trust-item"><span class="icon">✓</span> دفع عند الاستلام</span>
+        <span class="trust-item"><span class="icon">✓</span> توصيل 4-8 ساعات</span>
+        <span class="trust-item"><span class="icon">✓</span> دعم عبر واتساب</span>
+      </div>
+    </div>
+    <div class="hero-cards" aria-label="أقسام المنتجات">
+      <a class="hero-card" href="https://saudivapes.com/ar/سحبات-جاهزة-لمرة-واحدة/c2053520858">
+        <div class="hero-card-icon">💨</div>
+        <div class="hero-card-text">
+          <h4>سحبات جاهزة</h4>
+          <p>Mazaj · Elf Bar · Geek Bar · Vgod</p>
+        </div>
+        <span class="hero-card-arrow">‹</span>
+      </a>
+      <a class="hero-card" href="https://saudivapes.com/ar/سحبة-سيجارة-vape-pen/c856338910">
+        <div class="hero-card-icon">⚡</div>
+        <div class="hero-card-text">
+          <h4>أجهزة الفيب</h4>
+          <p>XROS · Wenax · Caliburn · Vaporesso</p>
+        </div>
+        <span class="hero-card-arrow">‹</span>
+      </a>
+      <a class="hero-card" href="https://saudivapes.com/ar/نكهات-سحبة-سولت/c1589444568">
+        <div class="hero-card-icon">🍇</div>
+        <div class="hero-card-text">
+          <h4>نكهات فيب</h4>
+          <p>سولت · فري بيس · نكهات الآيس</p>
+        </div>
+        <span class="hero-card-arrow">‹</span>
+      </a>
+      <a class="hero-card" href="https://saudivapes.com/ar/أجهزة-شيشة-الكترونية/c215470303">
+        <div class="hero-card-icon">🌿</div>
+        <div class="hero-card-text">
+          <h4>شيشة الكترونية</h4>
+          <p>مزاج · Geek Bar · Vaporesso</p>
+        </div>
+        <span class="hero-card-arrow">‹</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════ STATS ═══ -->
+<div class="stats-bar" role="region" aria-label="إحصاءات المتجر">
+  <div class="stats-grid">
+    <div class="stat-item">
+      <div class="stat-number">+<span>1500</span></div>
+      <div class="stat-label">عميل راضٍ في الأحساء</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number"><span>200</span>+</div>
+      <div class="stat-label">نكهة متوفرة</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number"><span>4</span>-<span>8</span></div>
+      <div class="stat-label">ساعات متوسط التوصيل</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number"><span>100</span>%</div>
+      <div class="stat-label">منتجات أصلية مضمونة</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════ PRODUCTS ═══ -->
+<section class="products-section" id="products" role="region" aria-label="المنتجات المتاحة">
+  <div class="container">
+    <div class="section-label">المنتجات</div>
+    <h2 class="section-title">الأكثر طلباً في الأحساء الآن</h2>
+    <p class="section-sub">كل المنتجات أصلية مستوردة مباشرة، مع كود تحقق من الشركة المصنعة.</p>
+
+    <div class="product-tabs" role="tablist">
+      <button class="tab-btn active" onclick="filterProducts('all')">الكل</button>
+      <button class="tab-btn" onclick="filterProducts('disposable')">سحبات جاهزة</button>
+      <button class="tab-btn" onclick="filterProducts('flavors')">نكهات فيب</button>
+      <button class="tab-btn" onclick="filterProducts('devices')">أجهزة</button>
+    </div>
+
+    <div class="products-grid" id="products-grid">
+
+      <!-- Product 1: Disposable - Mazaj Lowit 5500 Peach -->
+      <article class="product-card" data-category="disposable">
+        <div class="product-img">
+          <span class="badge-hot">🔥 الأكثر مبيعاً</span>
+          <img src="https://cdn.salla.sa/jbXEY/c4c7227d-c34d-4dc5-8bb1-373ca3ddd663-667x1000-2w9CHZUSqtNPDjQGLvwbQvoUragyouSEjFPlFINU.jpg" alt="سحبة مزاج x اليف بار لويت 5500 موشة خوخ" width="667" height="1000" loading="lazy" decoding="async">
+        </div>
+        <div class="product-body">
+          <div class="product-brand">Mazaj × Elf Bar</div>
+          <h3 class="product-name">سحبة مزاج × اليف بار لويت 5500 موشة خوخ</h3>
+          <div class="product-specs">
+            <span class="spec-tag">5500 سحبة</span>
+            <span class="spec-tag">نكهة خوخ</span>
+            <span class="spec-tag">جاهزة</span>
+          </div>
+          <p style="font-size:0.82rem;color:var(--muted);margin-bottom:14px;">تعاون محدود بين مزاج وإلف بار. نكهة خوخ ناضجة مع برودة خفيفة. خيار ممتاز للمستخدم اليومي.</p>
+          <div class="product-footer">
+            <div class="product-price">تحقق من السعر <small>/ داخل المنتج</small></div>
+            <a href="https://saudivapes.com/ar/سحبة-مزاج-x-اليف-بار-لويت-5500-موشة-خوخ-mazaj-x-elfbar-lowit-5500-juicy-peach/p1011911492" class="btn-add">اطلب الآن</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 2: Disposable - Vgod 4K Apple -->
+      <article class="product-card" data-category="disposable">
+        <div class="product-img">
+          <span class="badge-new">✨ سحبة جديدة</span>
+          <img src="https://cdn.salla.sa/jbXEY/167a0bb3-bdb0-4133-b725-630c30898406-1000x1000-6iOHUATBJGI1GkhqyGnmbkV4SDaszwgHAG1V7pUy.jpg" alt="سحبة فيقود 4 كي تفاح" width="1000" height="1000" loading="lazy" decoding="async">
+        </div>
+        <div class="product-body">
+          <div class="product-brand">Vgod</div>
+          <h3 class="product-name">سحبة فيقود 4 كي بنكهة تفاح 4000 موشة</h3>
+          <div class="product-specs">
+            <span class="spec-tag">4000 سحبة</span>
+            <span class="spec-tag">نكهة تفاح</span>
+            <span class="spec-tag">جاهزة</span>
+          </div>
+          <p style="font-size:0.82rem;color:var(--muted);margin-bottom:14px;">سحبة بحجم صغير ونكهة تفاح منعشة. سهلة الحمل تناسب الاستخدام اليومي والتنقل.</p>
+          <div class="product-footer">
+            <div class="product-price">تحقق من السعر <small>/ داخل المنتج</small></div>
+            <a href="https://saudivapes.com/ar/سحبة-فيقود-4-كي-بنكهة-تفاح-4000-موشة-vgod-pod-4k-disposable-crisp-apple-4000-puffs/p1064312308" class="btn-add">اطلب الآن</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 3: Device - XROS 4 Nano -->
+      <article class="product-card" data-category="devices">
+        <div class="product-img">
+          <span class="badge-new">⚡ جهاز</span>
+          <img src="https://cdn.salla.sa/jbXEY/43455512-b740-4974-bee0-387c1d05be60-1000x785-gJrV39iEXjCaP0ygSzkRVtfAsBz3NwVavCc8p0Yv.png" alt="سحبة كروس 4 نانو من فابريسو" width="1000" height="785" loading="lazy" decoding="async">
+        </div>
+        <div class="product-body">
+          <div class="product-brand">Vaporesso</div>
+          <h3 class="product-name">سحبة كروس 4 نانو من فابريسو</h3>
+          <div class="product-specs">
+            <span class="spec-tag">Pod System</span>
+            <span class="spec-tag">قابل لإعادة التعبئة</span>
+            <span class="spec-tag">Type-C</span>
+          </div>
+          <p style="font-size:0.82rem;color:var(--muted);margin-bottom:14px;">جهاز pod صغير الحجم مع أداء ثابت. مناسب لمن يريد الانتقال من السحبات الجاهزة إلى جهاز عملي بتكلفة أقل.</p>
+          <div class="product-footer">
+            <div class="product-price">تحقق من السعر <small>/ داخل المنتج</small></div>
+            <a href="https://saudivapes.com/ar/سحبة-كروس-4-نانو-من-فابريسو-xros-4-nano-vaporesso/p1022269204" class="btn-add">اطلب الآن</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 4: Device - Wenax S-C -->
+      <article class="product-card" data-category="devices">
+        <div class="product-img">
+          <img src="https://cdn.salla.sa/jbXEY/073196d4-ba2d-4467-8ebc-32b239a5eee4-1000x1000-LuykYRNi8tCBbDzJbBpxmu0EInYTcP4bd9JqOKOF.jpg" alt="جهاز وينكس اس سي جيك فيب" width="1000" height="1000" loading="lazy" decoding="async">
+        </div>
+        <div class="product-body">
+          <div class="product-brand">Geekvape</div>
+          <h3 class="product-name">جهاز وينكس اس سي من جيك فيب</h3>
+          <div class="product-specs">
+            <span class="spec-tag">MTL</span>
+            <span class="spec-tag">Pod</span>
+            <span class="spec-tag">سهل للمبتدئ</span>
+          </div>
+          <p style="font-size:0.82rem;color:var(--muted);margin-bottom:14px;">جهاز سحبة إلكترونية بحجم جيب مثالي. بودات قابلة للاستبدال مع بطارية تدوم طويلاً. مناسب للاستخدام اليومي.</p>
+          <div class="product-footer">
+            <div class="product-price">تحقق من السعر <small>/ داخل المنتج</small></div>
+            <a href="https://saudivapes.com/ar/جهاز-وينكس-اس-سي-الجديد-من-جيك-فيب-geekvape-wenax-s-c/p102324982" class="btn-add">اطلب الآن</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 5: Flavor - Cloud Nurdz Grape Apple Ice -->
+      <article class="product-card" data-category="flavors">
+        <div class="product-img">
+          <img src="https://cdn.salla.sa/jbXEY/b336e15e-dc0b-4c77-91ae-4862097fb381-926.35658914729x1000-XekkCe1FWkgmciicFEikpOK28eD73AoIL3PurB0h.png" alt="نكهة كلاود نيردز عنب تفاح بارد" width="926" height="1000" loading="lazy" decoding="async">
+        </div>
+        <div class="product-body">
+          <div class="product-brand">Freebase</div>
+          <h3 class="product-name">نكهة كلاود نيردز عنب تفاح بارد 100 مل</h3>
+          <div class="product-specs">
+            <span class="spec-tag">100ml</span>
+            <span class="spec-tag">Freebase</span>
+            <span class="spec-tag">DTL</span>
+          </div>
+          <p style="font-size:0.82rem;color:var(--muted);margin-bottom:14px;">مزيج عنب وتفاح مع تأثير آيس منعش. مناسبة لأجهزة الشيشة الإلكترونية. بخار كثيف وطعم يدوم طويلاً.</p>
+          <div class="product-footer">
+            <div class="product-price">تحقق من السعر <small>/ داخل المنتج</small></div>
+            <a href="https://saudivapes.com/ar/نكهة-كلاود-نيردز-عنب-تفاح-بارد-100-مل-cloud-nurdz-ice-grape-apple/p1011040056" class="btn-add">تصفح</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 6: Salt - Twist Mango Ice -->
+      <article class="product-card" data-category="flavors">
+        <div class="product-img">
+          <img src="https://cdn.salla.sa/jbXEY/1eca91ff-4a2b-4f03-9bb4-099c1e919fc3-1000x1000-kk4QcwmHvC64ksGAyrsxipUt4qNYL06eRkuJmDqE.jpg" alt="نكهة سولت تويست مانجو ايس" width="1000" height="1000" loading="lazy" decoding="async">
+        </div>
+        <div class="product-body">
+          <div class="product-brand">Salt Nic</div>
+          <h3 class="product-name">نكهة سولت تويست مانجو آيس 30 مل</h3>
+          <div class="product-specs">
+            <span class="spec-tag">سولت</span>
+            <span class="spec-tag">مانجو</span>
+            <span class="spec-tag">بودات</span>
+          </div>
+          <p style="font-size:0.82rem;color:var(--muted);margin-bottom:14px;">نكهة مانجو استوائية مع برودة المنثول. تركيز 20mg أو 50mg. مثالية لأجهزة السحبة الإلكترونية منخفضة القدرة.</p>
+          <div class="product-footer">
+            <div class="product-price">تحقق من السعر <small>/ داخل المنتج</small></div>
+            <a href="https://saudivapes.com/ar/نكهة-سولت-سحبه-تويست-مانجو-ايس-twist-mango-ice-salt-nic/p1007044466" class="btn-add">تصفح</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div style="text-align:center;margin-top:36px;">
+      <a href="https://saudivapes.com/ar" class="btn-secondary" style="display:inline-flex;">عرض جميع المنتجات ‹</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ PROSE ═══ -->
+<section class="prose-section" role="region" aria-label="دليل شامل للفيب في الأحساء">
+  <div class="container">
+    <div class="prose-wrap">
+      <div class="section-label">دليل شامل</div>
+      <h2 class="section-title">متجر فيب في الأحساء: كيف تختار وتطلب بثقة؟</h2>
+      <p style="font-size:0.78rem;color:var(--muted);margin-bottom:24px;">📅 نُشر: 15 يناير 2026 | آخر تحديث: 25 أبريل 2026</p>
+
+      <p>إذا كنت في الأحساء وتبحث عن متجر فيب موثوق يوصل للمنزل، فأنت لست وحدك — <strong>الطلب على منتجات الفيب في المنطقة الشرقية ارتفع بشكل ملحوظ خلال 2024-2026</strong>، وأصبح السوق مليئاً بالخيارات، مما يصعّب الاختيار على الكثيرين.</p>
+
+      <p>في هذا الدليل نجيب على أكثر الأسئلة شيوعاً: ما الفرق بين السحبة والجهاز؟ كيف تختار نسبة النيكوتين الصحيحة؟ وكيف تعرف أن المنتج أصلي؟</p>
+
+      <h2>السحبة الجاهزة (Disposable) أم جهاز الفيب؟</h2>
+      <p>هذا أول سؤال يواجه كل مستخدم جديد. الجواب يعتمد على أسلوبك:</p>
+      <ul>
+        <li><strong>السحبة الجاهزة</strong> مثالية إذا كنت تريد الراحة التامة — فتحها واستخدامها مباشرة بدون إعدادات أو صيانة. تدوم من 3 إلى 14 يوم حسب الموديل.</li>
+        <li><strong>جهاز الفيب (Pod System)</strong> أوفر على المدى البعيد — تشتري النكهة بشكل منفصل وتعبئ الجهاز. تكلفته الشهرية أقل بنسبة 40-60%.</li>
+        <li><strong>للمبتدئين</strong> ننصح بسحبة جاهزة أولاً لتجربة النكهات المختلفة قبل الاستثمار في جهاز.</li>
+      </ul>
+
+      <div class="inline-cta">
+        <div class="cta-icon">💨</div>
+        <div>
+          <h4>تصفح السحبات الجاهزة المتوفرة الآن</h4>
+          <p>Mazaj، Elf Bar، Vgod، Geek Bar — توصيل لجميع أحياء الأحساء</p>
+        </div>
+        <a href="https://saudivapes.com/ar/سحبات-جاهزة-لمرة-واحدة/c2053520858">اطلب الآن</a>
+      </div>
+
+      <h2>كيف تختار نسبة النيكوتين الصحيحة؟</h2>
+      <p>غالبية المشكلات التي يواجهها المستخدمون الجدد سببها اختيار تركيز نيكوتين خاطئ. إليك الدليل السريع:</p>
+      <ul>
+        <li><strong>صفر نيكوتين (0mg):</strong> للمستخدم الذي يريد تجربة النكهة والبخار فقط بدون أي إدمان.</li>
+        <li><strong>3mg إلى 6mg:</strong> مناسب لمدخن السيجارة الخفيف (أقل من نصف علبة يومياً).</li>
+        <li><strong>20mg نيكوتين سولت:</strong> الأكثر شيوعاً في السعودية — يعطي نفس الإشباع بكميات بخار أقل.</li>
+        <li><strong>50mg نيكوتين سولت:</strong> للمدخن الثقيل (علبة أو أكثر يومياً) — انتقال سلس وفوري.</li>
+      </ul>
+
+      <h2>كيف تتحقق من أصالة السحبة قبل الشراء؟</h2>
+      <p>السوق السعودي يعاني من انتشار المنتجات المقلدة، خصوصاً الماركات المشهورة. هذه العلامات تميز الأصلي:</p>
+      <ul>
+        <li>وجود <strong>كود QR أو Scratch Code</strong> على العبوة — امسحه على موقع الشركة المصنعة.</li>
+        <li>جودة الطباعة على العبوة: الأصلي طباعته حادة وألوانه ثابتة.</li>
+        <li>وزن المنتج: المقلد عادةً أخف بشكل ملحوظ.</li>
+        <li><strong>اشتر دائماً من متجر موثوق</strong> يوفر ضمان الأصالة — وهذا بالضبط ما نضمنه لك.</li>
+      </ul>
+
+      <div class="inline-cta">
+        <div class="cta-icon">✅</div>
+        <div>
+          <h4>كل منتجاتنا مستوردة مباشرة مع ضمان الأصالة</h4>
+          <p>نوفر كود التحقق مع كل طلب للتأكد من المصدر الأصلي</p>
+        </div>
+        <a href="https://saudivapes.com/ar">تعرف أكثر</a>
+      </div>
+
+      <h2>أفضل نكهات الفيب الأكثر طلباً في الأحساء 2026</h2>
+      <p>بناءً على طلبات عملائنا في الأحساء والمنطقة الشرقية، هذه النكهات الأكثر شعبية هذا الموسم:</p>
+      <ul>
+        <li><strong>مانجو آيس:</strong> الأكثر مبيعاً على مستوى السعودية لثلاث سنوات متتالية.</li>
+        <li><strong>عنب آيس:</strong> نكهة كلاسيكية — توازن مثالي بين حلاوة العنب وبرودة المنثول.</li>
+        <li><strong>خوخ آيس:</strong> مطلوب بكثرة في الأحساء خصوصاً مع مزاج Lowit 5500.</li>
+        <li><strong>كاسترد فانيليا:</strong> الخيار المفضل لمحبي النكهات الدسمة والدافئة.</li>
+        <li><strong>كولا آيس:</strong> اتجاه جديد قوي في 2026 — نكهة مشروب الكولا مع تأثير الآيس.</li>
+      </ul>
+      <div style="margin-top:28px;padding:16px 20px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.82rem;color:var(--muted);">
+        <strong style="color:var(--accent2);">✍️ فريق التحرير:</strong> هذا الدليل من إعداد فريق Saudi Vape — خبرة في منتجات الفيب والشيشة الإلكترونية في السعودية.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ GUIDE ═══ -->
+<section class="guide-section" id="guide" role="region" aria-label="دليل الاختيار والمقارنة">
+  <div class="container">
+    <div class="guide-grid">
+      <div class="guide-text">
+        <div class="section-label">دليل المبتدئين</div>
+        <h2 class="section-title">خطواتك الأولى مع الفيب في الأحساء</h2>
+        <p>إذا كنت تفكر في تجربة الفيب لأول مرة، هذا الدليل المختصر سيحميك من الأخطاء الشائعة ويوصلك للخيار الصحيح بدون تجربة وخطأ مكلفة.</p>
+        <ul class="steps-list">
+          <li>
+            <div class="step-num">١</div>
+            <div class="step-text">
+              <h4>حدد هدفك من الفيب</h4>
+              <p>هل تريد الإقلاع عن التدخين؟ تجربة النكهات؟ أو استخدام اجتماعي؟ كل هدف له منتج مختلف.</p>
+            </div>
+          </li>
+          <li>
+            <div class="step-num">٢</div>
+            <div class="step-text">
+              <h4>ابدأ بسحبة جاهزة</h4>
+              <p>لا تعقيد، لا صيانة. اختر سحبة بين 4000-5500 نفسة ونكهة تحبها — ستعرف إذا كان الفيب مناسباً لك.</p>
+            </div>
+          </li>
+          <li>
+            <div class="step-num">٣</div>
+            <div class="step-text">
+              <h4>اختر تركيز النيكوتين الصح</h4>
+              <p>مدخن ثقيل؟ ابدأ بـ 50mg سولت. خفيف؟ جرب 20mg. لا تدخن أصلاً؟ ابدأ بـ 0mg أو 3mg.</p>
+            </div>
+          </li>
+          <li>
+            <div class="step-num">٤</div>
+            <div class="step-text">
+              <h4>اطلب من متجر موثوق</h4>
+              <p>الفرق بين الأصلي والمقلد ليس فقط في الجودة — بل في السلامة. اطلب دائماً مع ضمان الأصالة.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="compare-card">
+          <h3>🆚 مقارنة أشهر السحبات في الأحساء — 2026</h3>
+          <table class="compare-table" role="table" aria-label="مقارنة بين سحبات الفيب">
+            <thead>
+              <tr>
+                <th>الموديل</th>
+                <th>النفسات</th>
+                <th>البطارية</th>
+                <th>السعر</th>
+                <th>التوصية</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mazaj Lowit 5500</td>
+                <td>5,500</td>
+                <td>650mAh</td>
+                <td>٧٥ ر</td>
+                <td><span class="best-badge">الأكثر مبيعاً</span></td>
+              </tr>
+              <tr>
+                <td>Vgod 4K Apple</td>
+                <td>4,000</td>
+                <td>500mAh</td>
+                <td>٦٥ ر</td>
+                <td><span class="best-badge">نكهة تفاح</span></td>
+              </tr>
+              <tr>
+                <td>Randm Tornado 7000</td>
+                <td>7,000</td>
+                <td>1000mAh</td>
+                <td>٩٠ ر</td>
+                <td><span class="best-badge">بخار كثيف</span></td>
+              </tr>
+              <tr>
+                <td>Elf Bar BC5000</td>
+                <td>5,000</td>
+                <td>650mAh</td>
+                <td>٧٥ ر</td>
+                <td><span class="best-badge">استخدام يومي</span></td>
+              </tr>
+              <tr>
+                <td>Vozol Vista 20000</td>
+                <td>20,000</td>
+                <td>شاشة</td>
+                <td>١٥٠ ر</td>
+                <td><span class="best-badge">للمحترف</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ CALCULATOR ═══ -->
+<section class="calc-section" role="region" aria-label="حاسبة النيكوتين والتكلفة">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:36px;">
+      <div class="section-label">أداة تفاعلية</div>
+      <h2 class="section-title">احسب كم تحتاج شهرياً</h2>
+      <p class="section-sub" style="margin:0 auto;">أدخل بياناتك واكتشف المنتج الأنسب لك وتكلفتك الشهرية الحقيقية</p>
+    </div>
+    <div class="calc-card">
+      <h3>🧮 حاسبة الفيب الذكية</h3>
+      <p>خمس ثوانٍ وستعرف بالضبط ما تحتاجه</p>
+
+      <div class="form-group">
+        <label for="smoke-level">كم سيجارة تدخن يومياً؟</label>
+        <select id="smoke-level">
+          <option value="">اختر...</option>
+          <option value="light">أقل من 10 (خفيف)</option>
+          <option value="medium">10-20 سيجارة (متوسط)</option>
+          <option value="heavy">أكثر من 20 (ثقيل)</option>
+          <option value="none">لا أدخن (مستخدم جديد)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="usage-type">كيف ستستخدم الفيب؟</label>
+        <select id="usage-type">
+          <option value="">اختر...</option>
+          <option value="social">اجتماعي (أحياناً مع الأصدقاء)</option>
+          <option value="daily">يومي (بديل السيجارة)</option>
+          <option value="casual">خفيف (مرتين إلى ثلاث يومياً)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="budget">ميزانيتك الشهرية للفيب؟</label>
+        <select id="budget">
+          <option value="">اختر...</option>
+          <option value="low">أقل من 100 ريال</option>
+          <option value="mid">100 - 300 ريال</option>
+          <option value="high">أكثر من 300 ريال</option>
+        </select>
+      </div>
+
+      <button class="calc-btn" onclick="calculateVape()">احسب توصيتك ‹</button>
+
+      <div class="calc-result" id="calc-result">
+        <h4>✅ توصيتنا لك:</h4>
+        <div class="result-main" id="result-product">—</div>
+        <p id="result-desc">—</p>
+        <a href="#products" class="btn-add" style="display:inline-block">اطلب الآن بالأحساء ‹</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ AREAS ═══ -->
+<section class="areas-section" id="areas" role="region" aria-label="مناطق التوصيل في الأحساء">
+  <div class="container">
+    <div class="section-label">التوصيل</div>
+    <h2 class="section-title">نوصّل لجميع أحياء الأحساء</h2>
+    <p class="section-sub">توصيل سريع لجميع أحياء الأحساء خلال 4-8 ساعات، وشحن لكل مدن السعودية خلال 24-72 ساعة.</p>
+
+    <div class="areas-grid" role="list">
+      <div class="area-card" role="listitem">
+        <div class="area-icon">🏙️</div>
+        <div class="area-name">وسط الأحساء</div>
+        <div class="area-time">⚡ 4-6 ساعات</div>
+      </div>
+      <div class="area-card" role="listitem">
+        <div class="area-icon">🏘️</div>
+        <div class="area-name">شمال الأحساء</div>
+        <div class="area-time">⚡ 5-7 ساعات</div>
+      </div>
+      <div class="area-card" role="listitem">
+        <div class="area-icon">🏡</div>
+        <div class="area-name">شرق الأحساء</div>
+        <div class="area-time">⚡ 4-8 ساعات</div>
+      </div>
+      <div class="area-card" role="listitem">
+        <div class="area-icon">🌆</div>
+        <div class="area-name">غرب الأحساء</div>
+        <div class="area-time">⚡ 5-8 ساعات</div>
+      </div>
+      <div class="area-card" role="listitem">
+        <div class="area-icon">🏢</div>
+        <div class="area-name">جنوب الأحساء</div>
+        <div class="area-time">⚡ 4-7 ساعات</div>
+      </div>
+      <div class="area-card" role="listitem">
+        <div class="area-icon">🌃</div>
+        <div class="area-name">ضواحي الأحساء</div>
+        <div class="area-time">⚡ 6-10 ساعات</div>
+      </div>
+      <div class="area-card" role="listitem">
+        <div class="area-icon">🌉</div>
+        <div class="area-name">الأحياء الطرفية في الأحساء</div>
+        <div class="area-time">⚡ 6-12 ساعة</div>
+      </div>
+      <div class="area-card" role="listitem">
+        <div class="area-icon">🚚</div>
+        <div class="area-name">باقي مدن السعودية</div>
+        <div class="area-time">📦 24-72 ساعة</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ PAYMENT ═══ -->
+<section class="payment-section" role="region" aria-label="طرق الدفع المتاحة">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:36px;">
+      <div class="section-label">طرق الدفع</div>
+      <h2 class="section-title">ادفع بالطريقة اللي تريح</h2>
+    </div>
+    <div class="payment-grid">
+      <div class="payment-card">
+        <div class="payment-icon">💳</div>
+        <div class="payment-name">مدى</div>
+        <div class="payment-desc">الدفع المباشر من حسابك السعودي</div>
+      </div>
+      <div class="payment-card">
+        <div class="payment-icon">🍎</div>
+        <div class="payment-name">Apple Pay</div>
+        <div class="payment-desc">دفع سريع وآمن بضغطة واحدة</div>
+      </div>
+      <div class="payment-card">
+        <div class="payment-icon">🚪</div>
+        <div class="payment-name">عند الاستلام</div>
+        <div class="payment-desc">ادفع نقداً حين يصل طلبك — داخل الأحساء</div>
+      </div>
+      <div class="payment-card">
+        <div class="payment-icon">🔄</div>
+        <div class="payment-name">تمارا / تابي</div>
+        <div class="payment-desc">قسّم قيمة طلبك على 3 أشهر بدون فوائد</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ REVIEWS ═══ -->
+<section class="reviews-section" role="region" aria-label="تقييمات العملاء">
+  <div class="container">
+    <div class="section-label">التقييمات</div>
+    <h2 class="section-title">ماذا قال عملاؤنا في الأحساء</h2>
+    <p class="section-sub">تقييمات حقيقية من عملاء سبق لهم الشراء منا.</p>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">طلبت مزاج Lowit 5500 نكهة خوخ عشان أجرب الفيب لأول مرة. وصل الطلب خلال 6 ساعات تقريباً. النكهة ممتازة والمنتج أصلي — تأكدت من كود التحقق.</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">س</div>
+          <div>
+            <div class="reviewer-name">سعد اليوسف</div>
+            <div class="reviewer-date">الأحساء — أبريل 2026</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">طلبت XROS 4 Nano مع نكهة سولت مانجو آيس. التوصيل كان أسرع من المتوقع — وصل بشوي. الجهاز ممتاز ونكهة المانجو رهيبة. سأطلب مرة ثانية.</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">ح</div>
+          <div>
+            <div class="reviewer-name">حسن الجاسم</div>
+            <div class="reviewer-date">الأحساء — مارس 2026</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★☆</div>
+        <p class="review-text">أول مرة أطلب من متجر فيب أونلاين. اخترت فيقود 4K تفاح للبداية. السحبة ممتازة والحجم صغير يناسب الجيب. وصلت بعد 7 ساعات من الطلب — تأخير بسيط لكن الخدمة ممتازة.</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">م</div>
+          <div>
+            <div class="reviewer-name">منيرة الحواس</div>
+            <div class="reviewer-date">الأحساء — فبراير 2026</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ FAQ ═══ -->
+<section class="faq-section" id="faq" role="region" aria-label="الأسئلة الشائعة">
+  <div class="container">
+    <div class="faq-grid">
+      <div>
+        <div class="section-label">الأسئلة الشائعة</div>
+        <h2 class="section-title">كل ما تسأل عنه</h2>
+        <ul class="faq-list" role="list">
+          <li class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+              هل يوجد متجر فيب يوصل للمنزل في الأحساء؟
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" role="region">
+              نعم، نحن متخصصون في التوصيل لجميع أحياء الأحساء من الساعة 9 صباحاً حتى منتصف الليل. الطلبات المستلمة قبل الساعة 4 مساءً تصل عادةً خلال 4-8 ساعات حسب الحي، والطلبات المتأخرة تُنجز في اليوم التالي.
+            </div>
+          </li>
+          <li class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+              هل الدفع عند الاستلام متاح؟
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" role="region">
+              نعم، الدفع عند الاستلام متاح لجميع توصيلات الأحساء. خارج الأحساء يمكن الدفع بمدى، Apple Pay، أو بطاقات الائتمان. نقبل أيضاً التقسيط عبر تمارا وتابي.
+            </div>
+          </li>
+          <li class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+              كيف أتأكد أن السحبة أصلية وليست مقلدة؟
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" role="region">
+              كل منتجاتنا مستوردة مباشرة وتحمل كود scratch للتحقق من الأصالة على موقع الشركة المصنعة. عند استلام طلبك يمكنك فوراً مسح الكود للتأكد — إذا لم يظهر الكود صحيحاً نستبدل المنتج فوراً.
+            </div>
+          </li>
+          <li class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+              ما أفضل سحبة للمبتدئ في 2026؟
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" role="region">
+              للمبتدئ ننصح بـ Mazaj Lowit 5500 أو Elf Bar BC5000 — سهلة الاستخدام، تدوم 5000 نفسة (حوالي 3-7 أيام)، وتأتي بنكهات متعددة كالخوخ والعنب والمانجو. السعر معقول وجودتها مثبتة عالمياً.
+            </div>
+          </li>
+          <li class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+              هل تشحنون لجميع مدن السعودية؟
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" role="region">
+              نعم، نشحن لجميع مدن المملكة: الرياض، جدة، الدمام، الخبر، مكة، المدينة، أبها، تبوك، القصيم وغيرها. مدة الشحن 24-72 ساعة حسب المنطقة. الشحن مجاني للطلبات فوق 500 ريال.
+            </div>
+          </li>
+          <li class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+              ما سياسة الاسترجاع والاستبدال؟
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" role="region">
+              نقبل الاستبدال والاسترجاع خلال 7 أيام من الاستلام في حال وجود عيب في المنتج أو اختلاف عن الطلب. تواصل معنا عبر واتساب بصورة المنتج وسيتم الحل فوراً. المنتجات الاستهلاكية (النكهات والسحبات المفتوحة) غير قابلة للإرجاع ضماناً لسلامتك.
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="faq-cta">
+        <div class="emoji">💬</div>
+        <h3>سؤالك مو مذكور هنا؟</h3>
+        <p>فريقنا متاح على واتساب من الساعة 9 صباحاً حتى منتصف الليل — رد خلال دقائق مضمون.</p>
+        <a href="https://wa.me/966542906276?text=مرحبا، عندي سؤال عن منتجات الفيب في الأحساء" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          تواصل الآن على واتساب
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ BOTTOM CTA ═══ -->
+<section class="bottom-cta" role="region" aria-label="دعوة للشراء">
+  <h2>جاهز تطلب؟<br/>الأحساء بنوصّل لبابك 🚀</h2>
+  <p>أصلي، سريع، موثوق — كل ما تحتاجه من فيب في مكان واحد.</p>
+  <div class="cta-actions">
+    <a href="#products" class="btn-primary">🛒 تسوق الآن</a>
+    <a href="https://wa.me/966542906276" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+      💬 اطلب عبر واتساب
+    </a>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ FOOTER ═══ -->
+<footer role="contentinfo">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="https://saudivapes.com/ar" class="nav-logo" style="font-size:1.5rem;">Saudi <span>Vape</span></a>
+      <p>متجر متخصص في الفيب والشيشة الالكترونية والنكهات الأصلية. نوفر توصيلاً سريعاً لجميع أحياء الأحساء ومدن المملكة مع ضمان الأصالة وخدمة ما بعد البيع.</p>
+    </div>
+    <div class="footer-col">
+      <h4>المنتجات</h4>
+      <ul>
+        <li><a href="https://saudivapes.com/ar/سحبات-جاهزة-لمرة-واحدة/c2053520858">سحبات جاهزة</a></li>
+        <li><a href="https://saudivapes.com/ar/أجهزة-شيشة-الكترونية/c215470303">أجهزة الفيب</a></li>
+        <li><a href="https://saudivapes.com/ar/نكهات-فيب-شيشة/c681123545">نكهات فيب</a></li>
+        <li><a href="https://saudivapes.com/ar/أجهزة-شيشة-الكترونية/c215470303">شيشة الكترونية</a></li>
+        <li><a href="https://saudivapes.com/ar/ملحقات-accessories/c532207655">ملحقات وكويلات</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>المتجر</h4>
+      <ul>
+        <li><a href="https://saudivapes.com/ar/redirect/pages/1006707947">عن المتجر</a></li>
+        <li><a href="https://saudivapes.com/ar">ضمان الأصالة</a></li>
+        <li><a href="https://saudivapes.com/ar/redirect/pages/166609908">الشحن والتوصيل</a></li>
+        <li><a href="https://saudivapes.com/ar/redirect/pages/125739255">سياسة الاسترجاع</a></li>
+        <li><a href="https://saudivapes.com/ar">تواصل معنا</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Saudi Vape — جميع الحقوق محفوظة</span>
+    <span>الأحساء، المنطقة الشرقية، المملكة العربية السعودية</span>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════ JS ═══ -->
+<script>
+  // FAQ Toggle
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(el => {
+      el.classList.remove('open');
+      el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      btn.setAttribute('aria-expanded', 'true');
+    }
+  }
+
+  // Vape Calculator
+  function calculateVape() {
+    const smoke = document.getElementById('smoke-level').value;
+    const usage = document.getElementById('usage-type').value;
+    const budget = document.getElementById('budget').value;
+
+    if (!smoke || !usage || !budget) {
+      alert('الرجاء اختيار جميع الخيارات أولاً');
+      return;
+    }
+
+    const result = document.getElementById('calc-result');
+    const productEl = document.getElementById('result-product');
+    const descEl = document.getElementById('result-desc');
+
+    let product, desc;
+
+    if (smoke === 'heavy' || usage === 'daily') {
+      if (budget === 'high') {
+        product = '🏆 Vozol Vista 20000 — نيكوتين سولت 50mg';
+        desc = 'للمستخدم اليومي الثقيل: 20000 نفسة تكفيك 10-14 يوم. بالميزانية العالية ننصح بجهاز Pod للتوفير طويل المدى — تكلفتك الشهرية ستكون أقل بـ 40%.';
+      } else if (budget === 'mid') {
+        product = '💨 Mazaj Lowit 5500 — نيكوتين سولت 50mg';
+        desc = 'توازن ممتاز بين الجودة والسعر. 5500 نفسة تدوم 5-7 أيام، وبالميزانية المتوسطة ستحتاج 3-4 قطع شهرياً.';
+      } else {
+        product = '✅ Vgod 4K — نيكوتين سولت 50mg';
+        desc = 'الخيار الأذكى بميزانية محدودة. ستحتاج 4-5 قطع شهرياً. ننصح بالشراء بالكمية للحصول على سعر أوفر.';
+      }
+    } else if (smoke === 'medium' || usage === 'casual') {
+      product = '⭐ Elf Bar BC5000 — نيكوتين سولت 20mg';
+      desc = 'مثالي للمستخدم المتوسط. 5000 نفسة تكفيك 5-7 أيام. نكهاتها من أدق وأجمل ما في السوق.';
+    } else if (smoke === 'none') {
+      product = '🌱 Mazaj Lowit 5500 — نيكوتين 0mg أو 3mg';
+      desc = 'للمستخدم الجديد الذي لا يدخن: ابدأ بصفر نيكوتين أو 3mg فقط. تجنب التركيزات العالية تماماً في البداية.';
+    } else {
+      product = '🎯 Elf Bar BC5000 — نيكوتين 3mg';
+      desc = 'خيار شامل ومناسب لغالبية الحالات. ابدأ به ثم عدّل بناءً على تجربتك الأولى.';
+    }
+
+    productEl.textContent = product;
+    descEl.textContent = desc;
+    result.classList.add('show');
+    result.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  // Product filter (simple show/hide)
+  function filterProducts(cat) {
+    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+    document.querySelectorAll('.product-card').forEach(card => {
+      if (cat === 'all' || card.dataset.category === cat) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
+`, {
+        headers: {
+          'content-type': 'text/html; charset=utf-8',
+          'cache-control': 'public, max-age=3600',
+          'x-content-type-options': 'nosniff',
+          'referrer-policy': 'strict-origin-when-cross-origin',
+        },
+      });
+    }
+
+    return fetch(request);
+  },
+};

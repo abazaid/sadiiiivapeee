@@ -1,0 +1,7 @@
+name = "best-vape-store-ksa"
+main = "worker.js"
+compatibility_date = "2025-02-20"
+
+routes = [
+  { pattern = "saudivapes.com/best-vape-store-ksa", zone_name = "saudivapes.com" }
+]

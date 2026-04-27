@@ -1,0 +1,22 @@
+---
+import BlogIndexLayout from '../../../layouts/BlogIndexLayout.astro';
+
+const blogPosts = Object.values(
+  import.meta.glob<{ frontmatter: { title: string; description: string; slug: string; date: string; image: string; category: string; draft?: boolean } }>('../../../content/blog/*.md', { eager: true })
+);
+
+const posts = blogPosts
+  .filter(p => !p.frontmatter.draft)
+  .map(p => ({
+    title: p.frontmatter.title,
+    description: p.frontmatter.description,
+    slug: p.frontmatter.slug,
+    date: p.frontmatter.date,
+    image: p.frontmatter.image,
+    category: p.frontmatter.category,
+    tags: p.frontmatter.tags,
+  }))
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+---
+
+<BlogIndexLayout posts={posts} />

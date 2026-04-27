@@ -1,0 +1,7 @@
+﻿name = "blogrerw"
+main = "worker.js"
+compatibility_date = "2026-04-22"
+
+routes = [
+  { pattern = "blog.saudivapes.com/*", zone_name = "saudivapes.com" }
+]

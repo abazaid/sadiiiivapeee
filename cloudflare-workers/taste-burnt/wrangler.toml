@@ -1,0 +1,7 @@
+name = "taste-burnt"
+main = "worker.js"
+compatibility_date = "2025-02-20"
+
+routes = [
+  { pattern = "saudivapes.com/taste-burnt", zone_name = "saudivapes.com" }
+]

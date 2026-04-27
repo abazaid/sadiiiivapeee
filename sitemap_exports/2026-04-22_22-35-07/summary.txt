@@ -1,0 +1,12 @@
+﻿Source index: https://saudivapes.com/sitemap.xml
+Generated at: 2026-04-22 22:35:15 +03:00
+Total links: 5941
+Products: 5800
+Categories: 114
+Brands: 0
+Blogs: 12
+Other: 15
+
+Export folder: C:\xampp\htdocs\saudivape\sitemap_exports\2026-04-22_22-35-07
+
+Arabic-only filter applied: removed any URL containing /en

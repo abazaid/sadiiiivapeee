@@ -1,0 +1,51 @@
+---
+import { ORGANIZATION, AUTHOR } from '../../lib/constants';
+
+export interface Props {
+  headline: string;
+  description: string;
+  datePublished: string;
+  dateModified?: string;
+  image: string;
+  slug: string;
+  tags?: string[];
+}
+
+const { headline, description, datePublished, dateModified, image, slug, tags } = Astro.props;
+const pageUrl = `https://saudivapes.com/ar/blog/${slug}`;
+---
+
+<script type="application/ld+json" set:html={JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline,
+  description,
+  datePublished,
+  dateModified: dateModified || datePublished,
+  inLanguage: 'ar-SA',
+  author: {
+    '@type': 'Person',
+    '@id': AUTHOR['@id'],
+    name: AUTHOR.name,
+    url: AUTHOR.url,
+  },
+  publisher: {
+    '@type': 'Organization',
+    '@id': ORGANIZATION['@id'],
+    name: ORGANIZATION.name,
+    logo: {
+      '@type': 'ImageObject',
+      url: ORGANIZATION.logo,
+    },
+  },
+  image: {
+    '@type': 'ImageObject',
+    url: image,
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': pageUrl,
+  },
+  keywords: tags?.join(', '),
+  wordCount: undefined,
+})} />

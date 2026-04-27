@@ -1,0 +1,8 @@
+﻿name = "eastern-vape-landing"
+main = "worker.js"
+compatibility_date = "2026-04-23"
+
+routes = [
+  { pattern = "saudivapes.com/ar/متجر-فيب-الشرقية*", zone_name = "saudivapes.com" },
+  { pattern = "saudivapes.com/متجر-فيب-الشرقية*", zone_name = "saudivapes.com" }
+]

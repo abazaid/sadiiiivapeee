@@ -1,0 +1,142 @@
+﻿{
+    "generated_at":  "2026-04-22T20:36:49.5877555+03:00",
+    "account_id":  "117214a7443cc7cc03eec66e6577ea14",
+    "zones":  [
+                  {
+                      "name":  "saudivapes.com",
+                      "id":  "ecd4715388639a9206afd6b5e5dc2a21",
+                      "status":  "active",
+                      "type":  "full",
+                      "routes":  [
+                                     {
+                                         "id":  "64561a2400ee4fc78635686991ad3c00",
+                                         "pattern":  "saudivapes.com/فيب*",
+                                         "script":  "odd-block-e5db"
+                                     },
+                                     {
+                                         "id":  "11884d2b2a6442219834afb1e38c4844",
+                                         "pattern":  "saudivapes.com/best-vape-store-ksa",
+                                         "script":  "best-vape-store-ksa"
+                                     },
+                                     {
+                                         "id":  "b9c1ef78a918425d996e02476bbfa6fc",
+                                         "pattern":  "saudivapes.com/taste-burnt",
+                                         "script":  "taste-burnt"
+                                     },
+                                     {
+                                         "id":  "8dc134db660a4e1783b3a3e2ba5ec80f",
+                                         "pattern":  "saudivapes.com/vct",
+                                         "script":  "vct"
+                                     },
+                                     {
+                                         "id":  "0a6e2455b6c44ece934b8e5e8c19048c",
+                                         "pattern":  "saudivapes.com/فيب-السعودية",
+                                         "script":  "saudi-vape"
+                                     },
+                                     {
+                                         "id":  "1407417847564276bc75ed00b9ea1b8e",
+                                         "pattern":  "saudivapes.com/blog-vape*",
+                                         "script":  "blog"
+                                     },
+                                     {
+                                         "id":  "90a0d5bfe66e4869840a3d1ae2c699d1",
+                                         "pattern":  "blog.saudivapes.com/*",
+                                         "script":  "blogrerw"
+                                     },
+                                     {
+                                         "id":  "94fea1edfc804e5e842b0a7a21273ab1",
+                                         "pattern":  "saudivapes.com/ksavape",
+                                         "script":  "ksavape"
+                                     },
+                                     {
+                                         "id":  "36defcaa691a4721905fd1dbdf9bac72",
+                                         "pattern":  "saudivapes.com/robots.txt",
+                                         "script":  "robots-fix"
+                                     }
+                                 ]
+                  }
+              ],
+    "scripts":  [
+                    {
+                        "id":  "best-vape-store-ksa",
+                        "created_on":  "2025-09-17T09:00:23.932831Z",
+                        "modified_on":  "2025-09-17T09:01:49.929456Z",
+                        "local_dir":  "c:\\xampp\\htdocs\\saudivape\\cloudflare-workers\\best-vape-store-ksa",
+                        "files":  [
+                                      "C:\\xampp\\htdocs\\saudivape\\cloudflare-workers\\best-vape-store-ksa\\worker.js"
+                                  ]
+                    },
+                    {
+                        "id":  "blog",
+                        "created_on":  "2025-09-19T19:53:38.438393Z",
+                        "modified_on":  "2025-10-24T17:02:22.301067Z",
+                        "local_dir":  "c:\\xampp\\htdocs\\saudivape\\cloudflare-workers\\blog",
+                        "files":  [
+                                      "C:\\xampp\\htdocs\\saudivape\\cloudflare-workers\\blog\\worker.js"
+                                  ]
+                    },
+                    {
+                        "id":  "blogrerw",
+                        "created_on":  "2025-09-19T19:58:04.576503Z",
+                        "modified_on":  "2025-10-19T11:39:01.741137Z",
+                        "local_dir":  "c:\\xampp\\htdocs\\saudivape\\cloudflare-workers\\blogrerw",
+                        "files":  [
+                                      "C:\\xampp\\htdocs\\saudivape\\cloudflare-workers\\blogrerw\\worker.js"
+                                  ]
+                    },
+                    {
+                        "id":  "ksavape",
+                        "created_on":  "2025-09-21T22:27:03.59774Z",
+                        "modified_on":  "2025-09-21T22:29:27.420184Z",
+                        "local_dir":  "c:\\xampp\\htdocs\\saudivape\\cloudflare-workers\\ksavape",
+                        "files":  [
+                                      "C:\\xampp\\htdocs\\saudivape\\cloudflare-workers\\ksavape\\worker.js"
+                                  ]
+                    },
+                    {
+                        "id":  "odd-block-e5db",
+                        "created_on":  "2025-09-16T18:09:28.757304Z",
+                        "modified_on":  "2025-09-16T21:28:18.927578Z",
+                        "local_dir":  "c:\\xampp\\htdocs\\saudivape\\cloudflare-workers\\odd-block-e5db",
+                        "files":  [
+                                      "C:\\xampp\\htdocs\\saudivape\\cloudflare-workers\\odd-block-e5db\\worker.js"
+                                  ]
+                    },
+                    {
+                        "id":  "robots-fix",
+                        "created_on":  "2025-10-19T12:33:28.881412Z",
+                        "modified_on":  "2025-10-19T12:33:43.227048Z",
+                        "local_dir":  "c:\\xampp\\htdocs\\saudivape\\cloudflare-workers\\robots-fix",
+                        "files":  [
+                                      "C:\\xampp\\htdocs\\saudivape\\cloudflare-workers\\robots-fix\\worker.js"
+                                  ]
+                    },
+                    {
+                        "id":  "saudi-vape",
+                        "created_on":  "2025-09-19T19:30:12.938475Z",
+                        "modified_on":  "2025-09-19T19:45:34.94508Z",
+                        "local_dir":  "c:\\xampp\\htdocs\\saudivape\\cloudflare-workers\\saudi-vape",
+                        "files":  [
+                                      "C:\\xampp\\htdocs\\saudivape\\cloudflare-workers\\saudi-vape\\worker.js"
+                                  ]
+                    },
+                    {
+                        "id":  "taste-burnt",
+                        "created_on":  "2025-09-17T08:35:01.73341Z",
+                        "modified_on":  "2025-09-17T10:01:26.656841Z",
+                        "local_dir":  "c:\\xampp\\htdocs\\saudivape\\cloudflare-workers\\taste-burnt",
+                        "files":  [
+                                      "C:\\xampp\\htdocs\\saudivape\\cloudflare-workers\\taste-burnt\\worker.js"
+                                  ]
+                    },
+                    {
+                        "id":  "vct",
+                        "created_on":  "2025-09-19T15:13:32.369836Z",
+                        "modified_on":  "2025-09-19T19:21:44.649318Z",
+                        "local_dir":  "c:\\xampp\\htdocs\\saudivape\\cloudflare-workers\\vct",
+                        "files":  [
+                                      "C:\\xampp\\htdocs\\saudivape\\cloudflare-workers\\vct\\worker.js"
+                                  ]
+                    }
+                ]
+}

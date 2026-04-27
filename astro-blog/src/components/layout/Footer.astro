@@ -1,0 +1,65 @@
+---
+import { SITE } from '../../lib/constants';
+---
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <img src="https://cdn.salla.sa/jbXEY/i4MuRKIpBu4YDUt5npRdQUlAfMg7dZhFbgRUD7Nj.png" alt={SITE.name} width="32" height="32" />
+      <p>{SITE.name} — {SITE.description}</p>
+    </div>
+    <div class="footer-links">
+      <a href="/ar/p/من-نحن">من نحن</a>
+      <a href="/ar/p/الشحن-و-التوصيل">الشحن والتوصيل</a>
+      <a href="/ar/p/الأسئلة-الشائعة-و-الفرق-بين-السحبة-و-الشيشة-الإلكترونية">الأسئلة الشائعة</a>
+      <a href="/ar/p/سياسة-الإبدال-و-الإسترجاع">الإبدال والاسترجاع</a>
+      <a href="/ar/p/الخصوصية">سياسة الخصوصية</a>
+      <a href="/ar/blog">المدونة</a>
+    </div>
+    <div class="footer-contact">
+      <span>واتساب: <a href="https://wa.me/966542906276">+966542906276</a></span>
+      <span>بريد: <a href="mailto:info@saudivapes.com">info@saudivapes.com</a></span>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/saudivapes/" target="_blank" rel="noopener">إنستغرام</a>
+        <a href="https://x.com/saudivapes" target="_blank" rel="noopener">تويتر</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© {new Date().getFullYear()} {SITE.name}. جميع الحقوق محفوظة.</p>
+  </div>
+</footer>
+
+<style is:global>
+  .site-footer {
+    background: #0a0a0f;
+    border-top: 1px solid #1e1e2e;
+    direction: rtl;
+    margin-top: 4rem;
+  }
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+  .footer-brand { color: #a0a0b8; font-size: 0.85rem; font-family: 'Cairo', sans-serif; }
+  .footer-brand img { margin-bottom: 0.5rem; }
+  .footer-links { display: flex; flex-direction: column; gap: 0.5rem; }
+  .footer-links a { color: #a0a0b8; text-decoration: none; font-size: 0.85rem; font-family: 'Cairo', sans-serif; }
+  .footer-links a:hover { color: #e8e8f0; }
+  .footer-contact { color: #a0a0b8; font-size: 0.85rem; font-family: 'Cairo', sans-serif; display: flex; flex-direction: column; gap: 0.5rem; }
+  .footer-contact a { color: #a0a0b8; text-decoration: none; }
+  .footer-contact a:hover { color: #e8e8f0; }
+  .footer-social { display: flex; gap: 1rem; margin-top: 0.5rem; }
+  .footer-bottom {
+    border-top: 1px solid #1e1e2e;
+    text-align: center;
+    padding: 1rem;
+    color: #6b6b80;
+    font-size: 0.8rem;
+    font-family: 'Cairo', sans-serif;
+  }
+</style>

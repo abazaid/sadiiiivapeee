@@ -1,0 +1,24 @@
+---
+import { ORGANIZATION } from '../../lib/constants';
+---
+
+<script type="application/ld+json" set:html={JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  '@id': ORGANIZATION['@id'],
+  name: ORGANIZATION.name,
+  alternateName: ORGANIZATION.alternateName,
+  url: ORGANIZATION.url,
+  logo: ORGANIZATION.logo,
+  foundingDate: ORGANIZATION.foundingDate,
+  foundingLocation: ORGANIZATION.foundingLocation,
+  address: ORGANIZATION.address,
+  contactPoint: {
+    '@type': 'ContactPoint',
+    telephone: ORGANIZATION.telephone,
+    contactType: 'customer service',
+    email: ORGANIZATION.email,
+    availableLanguage: ['Arabic', 'English'],
+  },
+  sameAs: ORGANIZATION.sameAs,
+})} />

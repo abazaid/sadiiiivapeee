@@ -1,0 +1,8 @@
+name = "cms-auth"
+main = "worker.js"
+compatibility_date = "2026-04-23"
+
+routes = [
+  { pattern = "saudivapes.com/auth", zone_name = "saudivapes.com" },
+  { pattern = "saudivapes.com/auth/*", zone_name = "saudivapes.com" },
+]

@@ -1,0 +1,17 @@
+---
+import { AUTHOR, ORGANIZATION } from '../../lib/constants';
+---
+
+<script type="application/ld+json" set:html={JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  '@id': AUTHOR['@id'],
+  name: AUTHOR.name,
+  alternateName: AUTHOR.alternateName,
+  url: AUTHOR.url,
+  jobTitle: AUTHOR.jobTitle,
+  description: AUTHOR.description,
+  knowsAbout: AUTHOR.knowsAbout,
+  worksFor: { '@id': ORGANIZATION['@id'] },
+  sameAs: AUTHOR.sameAs,
+})} />

@@ -1,0 +1,128 @@
+backend:
+  name: github
+  repo: tariqworldd/saudivape
+  branch: main
+  base_url: https://saudivapes.com/ar/admin
+  site_domain: saudivapes.com
+
+publish_mode: editorial_workflow
+
+media_folder: "public/images/blog"
+public_folder: "/images/blog"
+
+locale: 'ar'
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+
+collections:
+  - name: "blog"
+    label: "المقالات"
+    label_singular: "مقال"
+    description: "مقالات المدونة - محتوى متخصص بالفيب والشيشة الإلكترونية"
+    folder: "src/content/blog"
+    create: true
+    delete: true
+    path: "{{slug}}"
+    slug: "{{slug}}"
+    preview_path: "ar/blog/{{slug}}"
+    format: "frontmatter"
+    extension: md
+    sortable_fields: ['date', 'title']
+    view_filters:
+      - label: "منشورة"
+        field: "draft"
+        pattern: false
+      - label: "مسودة"
+        field: "draft"
+        pattern: true
+    fields:
+      - label: "العنوان"
+        name: "title"
+        widget: "string"
+        required: true
+
+      - label: "الوصف"
+        name: "description"
+        widget: "text"
+        hint: "وصف مختصر يظهر في محركات البحث (150-160 حرف)"
+        required: true
+
+      - label: "تاريخ النشر"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+        required: true
+
+      - label: "تاريخ التحديث"
+        name: "updated"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+        required: false
+
+      - label: "صورة المقال"
+        name: "image"
+        widget: "image"
+        required: true
+
+      - label: "نوع المقال"
+        name: "articleType"
+        widget: "select"
+        options:
+          - { label: "دليل", value: "guide" }
+          - { label: "مقارنة", value: "comparison" }
+          - { label: "مراجعة", value: "review" }
+          - { label: "قانوني", value: "legal" }
+          - { label: "أخبار", value: "news" }
+          - { label: "أخرى", value: "other" }
+        default: "guide"
+
+      - label: "التصنيف"
+        name: "category"
+        widget: "select"
+        options:
+          - { label: "السحبات الجاهزة", value: "disposable" }
+          - { label: "الشيشة الإلكترونية", value: "shisha" }
+          - { label: "النكهات والسوائل", value: "flavors" }
+          - { label: "أجهزة البودات", value: "pods" }
+          - { label: "أدلة قانونية", value: "legal" }
+          - { label: "نصائح وإرشادات", value: "tips" }
+          - { label: "مقارنات", value: "comparisons" }
+          - { label: "مراجعات", value: "reviews" }
+          - { label: "خدمات", value: "services" }
+          - { label: "أدلة شراء", value: "buying-guides" }
+        required: true
+
+      - label: "الكلمات المفتاحية"
+        name: "tags"
+        widget: "list"
+        hint: "5-10 كلمات مفتاحية متعلقة بالمقال"
+
+      - label: "الكاتب"
+        name: "author"
+        widget: "hidden"
+        default: "فريق سعودي فيب"
+
+      - label: "رابط الكاتب"
+        name: "authorUrl"
+        widget: "hidden"
+        default: "https://saudivapes.com/ar/blog/author/1210468642"
+
+      - label: "مسودة"
+        name: "draft"
+        widget: "boolean"
+        default: false
+
+      - label: "الرابط المختصر"
+        name: "slug"
+        widget: "string"
+        hint: "اختياري - اترك فارغاً لاستخدام العنوان"
+        required: false
+
+      - label: "محتوى المقال"
+        name: "body"
+        widget: "markdown"
+        required: true
+        hint: "اكتب المحتوى هنا. استخدم العناوين (##) للفقرات الرئيسية"

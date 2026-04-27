@@ -1,0 +1,7 @@
+name = "ksavape"
+main = "worker.js"
+compatibility_date = "2025-02-20"
+
+routes = [
+  { pattern = "saudivapes.com/ksavape", zone_name = "saudivapes.com" }
+]

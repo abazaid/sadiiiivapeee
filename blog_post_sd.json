@@ -1,0 +1,106 @@
+[
+  {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https://saudivapes.com/ar/",
+          "name": "الرئيسية",
+          "image": null
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@id": "https://saudivapes.com/ar/blog",
+          "name": "المدونة",
+          "image": null
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https://saudivapes.com/ar/blog/أفضل-سحبة-صغيرة-في-السعودية/a-611559142",
+          "name": "افضل سحبة صغيرة في السعودية",
+          "image": null
+        }
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "افضل سحبة صغيرة في السعودية في 2025",
+    "description": "مع تزايد شعبية السجائر افضل سحبة صغيرة في السعودية الإلكترونية في السعودية، أصبحت أجهزة السحبة الصغيرة الخيار المفضل للعديد من المستخدمين.",
+    "url": "https://saudivapes.com/ar/blog/%D8%A3%D9%81%D8%B6%D9%84-%D8%B3%D8%AD%D8%A8%D8%A9-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9/a-611559142",
+    "logo": "https://cdn.salla.sa/jbXEY/i4MuRKIpBu4YDUt5npRdQUlAfMg7dZhFbgRUD7Nj.png"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://saudivapes.com/#organization",
+    "name": "متجر فيب في السعودية سحبات وأجهزة أصلية بأفضل الأسعار",
+    "url": "https://saudivapes.com/ar/",
+    "logo": "https://cdn.salla.sa/jbXEY/6e7ec6a3-1417-4227-b5f3-afccd3e45a6e-120x79.274611398964-qnQpxPPfD7NZcZmyy1OVdn5lxYu1GVdpsVc0iyk0.png",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "SA"
+    },
+    "mainEntityOfPage": "https://saudivapes.com/ar/blog/أفضل-سحبة-صغيرة-في-السعودية/a-611559142"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https://saudivapes.com/ar/",
+          "name": "الرئيسية"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@id": "https://saudivapes.com/ar/blog/أفضل-سحبة-صغيرة-في-السعودية/a-611559142",
+          "name": "افضل سحبة صغيرة في السعودية في 2025"
+        }
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://saudivapes.com/ar/blog/أفضل-سحبة-صغيرة-في-السعودية/a-611559142#article",
+    "headline": "افضل سحبة صغيرة في السعودية في 2025",
+    "description": "مع تزايد شعبية السجائر افضل سحبة صغيرة في السعودية الإلكترونية في السعودية، أصبحت أجهزة السحبة الصغيرة الخيار المفضل للعديد من المستخدمين.",
+    "inLanguage": "ar",
+    "url": "https://saudivapes.com/ar/blog/أفضل-سحبة-صغيرة-في-السعودية/a-611559142",
+    "mainEntityOfPage": "https://saudivapes.com/ar/blog/أفضل-سحبة-صغيرة-في-السعودية/a-611559142",
+    "author": {
+      "@type": "Person",
+      "name": "SAIF",
+      "url": "https://saudivapes.com/ar/blog/author/1210468642",
+      "jobTitle": "محرر متخصص في منتجات الفيب",
+      "worksFor": {
+        "@id": "https://saudivapes.com/#organization"
+      }
+    },
+    "publisher": {
+      "@id": "https://saudivapes.com/#organization"
+    },
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://cdn.salla.sa/jbXEY/6e7ec6a3-1417-4227-b5f3-afccd3e45a6e-120x79.274611398964-qnQpxPPfD7NZcZmyy1OVdn5lxYu1GVdpsVc0iyk0.png"
+    },
+    "datePublished": "2021-06-26",
+    "dateModified": "2021-06-26"
+  }
+]

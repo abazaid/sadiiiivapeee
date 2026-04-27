@@ -1,0 +1,81 @@
+---
+import ArabicFonts from '../components/layout/ArabicFonts.astro';
+import Header from '../components/layout/Header.astro';
+import Footer from '../components/layout/Footer.astro';
+import OrganizationSchema from '../components/seo/OrganizationSchema.astro';
+import PersonSchema from '../components/seo/PersonSchema.astro';
+
+export interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <ArabicFonts />
+    <OrganizationSchema />
+    <PersonSchema />
+    <style is:global>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      html { scroll-behavior: smooth; }
+      body {
+        font-family: 'Cairo', sans-serif;
+        background: #f8f9fa;
+        color: #1a1a2e;
+        direction: rtl;
+        line-height: 1.8;
+        min-height: 100vh;
+      }
+      img { max-width: 100%; height: auto; }
+      a { color: #7c3aed; text-decoration: none; transition: color 0.2s; }
+      a:hover { color: #a855f7; }
+      h1, h2, h3, h4, h5, h6 { font-family: 'Tajawal', sans-serif; font-weight: 800; line-height: 1.3; color: #1a1a2e; }
+      .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+      .prose { max-width: 780px; margin: 0 auto; font-size: 1.05rem; color: #374151; }
+      .prose h2 { font-size: 1.5rem; margin: 2.5rem 0 1rem; color: #1a1a2e; }
+      .prose h3 { font-size: 1.2rem; margin: 2rem 0 0.75rem; color: #1a1a2e; }
+      .prose p { margin-bottom: 1.25rem; line-height: 1.9; }
+      .prose ul, .prose ol { margin-bottom: 1.25rem; padding-right: 1.5rem; }
+      .prose li { margin-bottom: 0.5rem; }
+      .prose strong { color: #1a1a2e; }
+      .prose img { border-radius: 12px; margin: 2rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+      .prose blockquote {
+        border-right: 4px solid #7c3aed;
+        padding: 1rem 1.5rem;
+        margin: 1.5rem 0;
+        background: #f3f0ff;
+        border-radius: 0 12px 12px 0;
+        color: #4b5563;
+      }
+      .prose table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1.5rem 0;
+        font-size: 0.9rem;
+      }
+      .prose th, .prose td {
+        padding: 0.75rem 1rem;
+        border: 1px solid #e2e8f0;
+        text-align: right;
+      }
+      .prose th { background: #7c3aed; color: #fff; font-weight: 700; }
+      .prose td { background: #fff; }
+      .prose tr:nth-child(even) td { background: #f8f9fa; }
+    </style>
+  </head>
+  <body>
+    <Header />
+    <main style="min-height: 60vh;">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

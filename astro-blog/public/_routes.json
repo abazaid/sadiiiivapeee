@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "include": ["/ar/blog", "/ar/blog/*", "/ar/blog/author/*", "/admin", "/admin/*"],
+  "exclude": [],
+  "fallthrough": ["/*"]
+}

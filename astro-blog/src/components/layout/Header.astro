@@ -1,0 +1,85 @@
+---
+import { SITE } from '../../lib/constants';
+---
+
+<header class="blog-header">
+  <nav class="nav-container">
+    <a href="/ar" class="logo">
+      <img src="https://cdn.salla.sa/jbXEY/i4MuRKIpBu4YDUt5npRdQUlAfMg7dZhFbgRUD7Nj.png" alt={SITE.name} width="36" height="36" />
+      <span>{SITE.name}</span>
+    </a>
+    <div class="nav-links">
+      <a href="/ar">الرئيسية</a>
+      <a href="/ar/blog" class="active">المدونة</a>
+      <a href="/ar/p/من-نحن">من نحن</a>
+      <a href="https://wa.me/966542906276" class="cta-whatsapp" target="_blank" rel="noopener">واتساب</a>
+    </div>
+  </nav>
+</header>
+
+<style is:global>
+  .blog-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    direction: rtl;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: #1a1a2e;
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 800;
+    font-size: 1.1rem;
+  }
+  .logo img { border-radius: 8px; }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .nav-links a {
+    color: #6b7280;
+    text-decoration: none;
+    font-family: 'Cairo', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: color 0.2s;
+    padding: 0.25rem 0;
+    position: relative;
+  }
+  .nav-links a:hover { color: #7c3aed; }
+  .nav-links a.active {
+    color: #7c3aed;
+  }
+  .nav-links a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: #7c3aed;
+    border-radius: 2px;
+  }
+  .cta-whatsapp {
+    background: #25d366;
+    color: #fff !important;
+    padding: 0.4rem 1rem;
+    border-radius: 8px;
+    font-weight: 700;
+  }
+  .cta-whatsapp:hover { background: #1da851 !important; color: #fff !important; }
+</style>

@@ -1,0 +1,8 @@
+﻿name = "nasty-landing"
+main = "worker.js"
+compatibility_date = "2025-02-20"
+
+routes = [
+  { pattern = "saudivapes.com/nasty*", zone_name = "saudivapes.com" },
+  { pattern = "saudivapes.com/ar/nasty*", zone_name = "saudivapes.com" }
+]

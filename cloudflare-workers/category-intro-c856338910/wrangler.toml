@@ -1,0 +1,8 @@
+name = "category-intro-c856338910"
+main = "worker.js"
+compatibility_date = "2026-04-22"
+
+routes = [
+  { pattern = "saudivapes.com/", zone_name = "saudivapes.com" },
+  { pattern = "saudivapes.com/ar*", zone_name = "saudivapes.com" }
+]

@@ -1,0 +1,28 @@
+.claude/
+.npm-cache/
+.wrangler/
+node_modules/
+dist/
+build/
+.astro/
+.vercel/
+.netlify/
+
+.env
+.env.*
+*.local
+*.log
+
+# Captured live HTML/API payloads can contain transient CSRF/session tokens.
+*_raw.json
+*_raw*.json
+sm*_raw.json
+sitemap_raw.json
+tmp-*.html
+
+# Local OS/editor files.
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+astro-blog/.git.local-backup/

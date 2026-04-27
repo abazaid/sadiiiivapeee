@@ -1,0 +1,8 @@
+name = "ahsa-vape-landing"
+main = "worker.js"
+compatibility_date = "2026-04-23"
+
+routes = [
+  { pattern = "saudivapes.com/ar/%D9%85%D8%AA%D8%AC%D8%B1-%D9%81%D9%8A%D8%A8-%D8%A7%D9%84%D8%A7%D8%AD%D8%B3%D8%A7%D8%A1*", zone_name = "saudivapes.com" },
+  { pattern = "saudivapes.com/%D9%85%D8%AA%D8%AC%D8%B1-%D9%81%D9%8A%D8%A8-%D8%A7%D9%84%D8%A7%D8%AD%D8%B3%D8%A7%D8%A1*", zone_name = "saudivapes.com" }
+]

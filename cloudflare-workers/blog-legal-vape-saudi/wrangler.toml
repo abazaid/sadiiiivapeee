@@ -1,0 +1,7 @@
+name = "blog-legal-vape-saudi"
+main = "worker.js"
+compatibility_date = "2026-04-23"
+
+routes = [
+  { pattern = "saudivapes.com/ar/%D9%87%D9%84-%D8%A7%D9%84%D9%81%D9%8A%D8%A8-%D9%85%D8%B3%D9%85%D9%88%D8%AD-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9*", zone_name = "saudivapes.com" }
+]

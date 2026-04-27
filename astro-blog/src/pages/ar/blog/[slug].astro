@@ -1,0 +1,41 @@
+---
+import BlogPostLayout from '../../../layouts/BlogPostLayout.astro';
+
+export async function getStaticPaths() {
+  // Inline data required for Cloudflare static adapter compatibility
+  const slugs = [
+    { slug: 'هل-الفيب-مسموح-في-السعودية', category: 'أدلة قانونية', tags: ['قانون الفيب', 'السعودية', 'الهيئة العامة للغذاء والدواء', 'شيشة إلكترونية', 'تبغ'] },
+    { slug: 'سعر-فيب-السعودية', category: 'أدلة شراء', tags: ['أسعار الفيب', 'السعودية', 'سحبات', 'شيشة إلكترونية', 'نكهات'] },
+    { slug: 'شحن-فيب-السعودية', category: 'خدمات', tags: ['شحن', 'توصيل', 'السعودية', 'فيب', 'الرياض', 'جدة'] },
+    { slug: 'افضل-شيشة-الكترونية-2025', category: 'مقارنات', tags: ['شيشة إلكترونية', 'أجهزة فيب', 'مقارنة', 'السعودية'] },
+    { slug: 'الشيشة-الكترونية-دليل-شامل', category: 'أدلة شراء', tags: ['شيشة إلكترونية', 'دليل', 'أجهزة', 'نكهات'] },
+    { slug: 'أفضل-سحبة-جاهزة-في-السعودية', category: 'أدلة شراء', tags: ['سحبات جاهزة', 'السعودية', 'فيب', 'disposable'] },
+    { slug: 'أفضل-سحبة-سيجارة-2025', category: 'مقارنات', tags: ['سحبة سيجارة', 'vape pen', 'السعودية'] },
+    { slug: 'أفضل-نكهات-ناستي-للسحبة-الالكترونية', category: 'مراجعات', tags: ['ناستي', 'نكهات', 'سولت', 'السعودية'] },
+    { slug: 'أفضل-5-نكهات-فيب-من-فيقود-للشيشة-الإلكترونية', category: 'مراجعات', tags: ['فيقود', 'نكهات فيب', 'شيشة إلكترونية'] },
+    { slug: 'افضل-6-نكهات-سولت-من-فيقود-للسحبة-الالكترونية', category: 'مراجعات', tags: ['فيقود', 'سولت نيكوتين', 'نكهات'] },
+    { slug: 'افضل-سحبة-صغيرة-في-السعودية', category: 'أدلة شراء', tags: ['سحبات صغيرة', 'pods', 'السعودية'] },
+    { slug: 'افضل-متجر-فيب-في-الرياض', category: 'أدلة شراء', tags: ['الرياض', 'متجر فيب', 'السعودية'] },
+    { slug: 'ارخص-نكهات-فيب', category: 'أدلة شراء', tags: ['نكهات', 'رخيصة', 'السعودية'] },
+    { slug: 'مقارنة-بين-أنواع-الشيشة-فيب', category: 'مقارنات', tags: ['مقارنة', 'شيشة إلكترونية', 'أنواع'] },
+    { slug: 'افضل-نكهات-الفيب-في-الرياض', category: 'مراجعات', tags: ['الرياض', 'نكهات فيب', 'السعودية'] },
+  ];
+  return slugs.map(entry => ({
+    params: { slug: entry.slug },
+    props: entry,
+  }));
+}
+
+const { slug, category, tags } = Astro.props;
+
+// Load markdown content for rendering
+const allPosts = Object.values(
+  import.meta.glob<{ frontmatter: { title: string; description: string; date: string; slug: string; image: string; draft?: boolean; updated?: string }; Content: any }>('../../../content/blog/*.md', { eager: true })
+);
+const post = allPosts.find(p => p.frontmatter.slug === slug);
+const { title, description, date, image } = post.frontmatter;
+---
+
+<BlogPostLayout {title} {description} {date} {image} {slug} {tags} {category}>
+  <post.Content />
+</BlogPostLayout>
