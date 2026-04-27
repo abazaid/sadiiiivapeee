@@ -174,6 +174,7 @@ export default {
     }
 
     const newHeaders = new Headers(response.headers);
+    newHeaders.delete('x-robots-tag');
     if (!newHeaders.has('Access-Control-Allow-Origin')) {
       newHeaders.set('Access-Control-Allow-Origin', '*');
     }
