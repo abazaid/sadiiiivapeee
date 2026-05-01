@@ -1,0 +1,10 @@
+name = "blog-og-image"
+main = "worker.js"
+compatibility_date = "2026-04-30"
+
+routes = [
+  { pattern = "saudivapes.com/ar/blog/og/*", zone_name = "saudivapes.com" },
+]
+
+[ai]
+binding = "AI"

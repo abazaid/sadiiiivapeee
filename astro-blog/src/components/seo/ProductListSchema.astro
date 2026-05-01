@@ -1,0 +1,39 @@
+---
+export interface ProductItem {
+  name: string;
+  url: string;
+  image: string;
+  price?: string;
+  currency?: string;
+}
+
+export interface Props {
+  products: ProductItem[];
+}
+
+const { products } = Astro.props;
+---
+
+{products.length > 0 && (
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    itemListElement: products.map((product, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      item: {
+        '@type': 'Product',
+        name: product.name,
+        image: product.image,
+        url: product.url,
+        offers: {
+          '@type': 'Offer',
+          price: product.price || undefined,
+          priceCurrency: product.currency || 'SAR',
+          availability: 'https://schema.org/InStock',
+          url: product.url,
+        },
+      },
+    })),
+  })} />
+)}

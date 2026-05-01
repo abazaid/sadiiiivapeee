@@ -9,9 +9,11 @@ export interface Props {
   image: string;
   slug: string;
   tags?: string[];
+  category?: string;
+  wordCount?: number;
 }
 
-const { headline, description, datePublished, dateModified, image, slug, tags } = Astro.props;
+const { headline, description, datePublished, dateModified, image, slug, tags, category, wordCount } = Astro.props;
 const pageUrl = `https://saudivapes.com/ar/blog/${slug}`;
 ---
 
@@ -47,5 +49,6 @@ const pageUrl = `https://saudivapes.com/ar/blog/${slug}`;
     '@id': pageUrl,
   },
   keywords: tags?.join(', '),
-  wordCount: undefined,
+  wordCount,
+  articleSection: category || undefined,
 })} />

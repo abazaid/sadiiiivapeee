@@ -12,6 +12,7 @@ export const ORGANIZATION = {
   '@id': 'https://saudivapes.com/#organization',
   name: 'فيب السعودية',
   alternateName: 'Saudi Vape',
+  description: 'متجر سعودي متخصص في بيع أجهزة الفيب والشيشة الإلكترونية والنكهات الأصلية مع التوصيل السريع لجميع مدن المملكة العربية السعودية.',
   url: 'https://saudivapes.com',
   logo: 'https://cdn.salla.sa/jbXEY/Bv6FKwLWFVbiOi6heH08B3RhVCMM1MkOAkYbQ2YX.png',
   logoPng: 'https://cdn.salla.sa/jbXEY/i4MuRKIpBu4YDUt5npRdQUlAfMg7dZhFbgRUD7Nj.png',
@@ -28,6 +29,7 @@ export const ORGANIZATION = {
   sameAs: [
     'https://www.instagram.com/saudivapes/',
     'https://x.com/saudivapes',
+    'https://wa.me/966542906276',
   ],
 };
 

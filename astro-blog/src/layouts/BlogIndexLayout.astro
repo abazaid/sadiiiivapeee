@@ -34,6 +34,7 @@ const canonical = tag
     description={pageDesc}
     canonical={canonical}
   />
+  {!tag && <link rel="alternate" hreflang="en" href="https://saudivapes.com/en/blog" />}
   <BreadcrumbSchema items={
     tag
       ? [
@@ -47,6 +48,20 @@ const canonical = tag
         ]
   } />
 
+  {!tag && (
+    <script type="application/ld+json" is:inline>
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": ["CollectionPage", "Blog"],
+        "@id": "https://saudivapes.com/ar/blog#webpage",
+        "url": "https://saudivapes.com/ar/blog",
+        "name": pageTitle,
+        "description": pageDesc,
+        "isPartOf": { "@id": "https://saudivapes.com/#website" },
+        "about": { "@id": "https://saudivapes.com/#organization" },
+      })}
+    </script>
+  )}
   <div class="blog-page">
     <div class="container">
       <div class="blog-header">
